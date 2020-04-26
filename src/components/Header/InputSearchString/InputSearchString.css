@@ -1,0 +1,21 @@
+.header .search-container .search-string {
+    display: flex;
+    align-items: center;
+    width: 100%; }
+
+.mnu-item:hover .mnu-item__svg {
+    stroke: #109CF1; }
+
+.header .search-container .searching {
+    font-family: 'Poppins-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #90A0B7; }
+
+@media screen and (max-width: 480px) {
+    .header .search-string{
+        margin: 0; }
+}

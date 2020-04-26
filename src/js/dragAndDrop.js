@@ -16,4 +16,4 @@ const dragNDrop = () => {
     }
     removeCard();
 }
-dragNDrop();
+export default dragNDrop();

@@ -1,0 +1,12 @@
+.contact-command {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+
+@media screen and (max-width: 480px) {
+    .contact-command {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 10px 10px 0 10px; }
+}

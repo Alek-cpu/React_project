@@ -1,0 +1,12 @@
+.drag-drop-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 24px 0 24px;
+}
+
+@media screen and (max-width: 1085px) {
+    .drag-drop-wrapper {
+        padding: 0;
+    }
+}

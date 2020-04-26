@@ -1,9 +1,9 @@
 import React from "react";
-import WebSiteName from "./WebSiteName";
-import SearchString from "./SearchString";
-import NotificationBtn from "./Notification";
-import SearchStringForm from "./InputSearchString";
-import '../../header.css';
+import WebSiteName from "./WebSiteName/WebSiteName";
+import SearchString from "./SearchString/SearchString";
+import NotificationBtn from "./Notification/Notification";
+import SearchStringForm from "./InputSearchString/InputSearchString";
+import './header.css';
 
 const Header = () => {
     return (

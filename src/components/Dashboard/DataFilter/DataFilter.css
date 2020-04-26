@@ -1,0 +1,33 @@
+.data-filter {
+    font-family: 'Poppins-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #6A707E; }
+
+.contact-sort {
+    display: flex;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #6A707E;
+    cursor: pointer; }
+
+.contact-sort__list {
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    height: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #109CF1;
+    background: none;
+    overflow: hidden;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}

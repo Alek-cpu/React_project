@@ -1,0 +1,69 @@
+.setting {
+    display: flex;
+    align-items: center; }
+
+.setting-wrap {
+    display: flex;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    padding-left: 24px;}
+
+.setting:hover .fil__svg {
+    fill: #109CF1; }
+
+.mnu-item {
+    display: flex;
+    padding-top: 20px;
+    cursor: pointer; }
+
+.mnu-item__name {
+    padding-left: 16.5px; }
+
+.mnu-item:hover, .mnu-item .mnu-item__name:hover {
+    color: #109CF1; }
+
+@media screen and (max-width: 1085px) {
+    .mnu-item {
+        justify-content: center; }
+    .mnu-item__name {
+        display: none; }
+    .setting-wrap {
+        display: flex;
+        padding-left: 24px;
+        font-size: 13px;
+        line-height: 19px; }
+}
+
+@media screen and (max-width: 480px) {
+    .mnu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .mnu-item__name {
+        display: none;
+    }
+
+    .setting-wrap {
+        display: flex;
+        font-size: 13px;
+        line-height: 19px;
+        padding-left: 0px;
+    }
+
+    .mnu, .setting-wrap {
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+    }
+}
+@media screen and (max-width: 756px) {
+    .mnu-item__name {
+        display: none;
+    }
+}

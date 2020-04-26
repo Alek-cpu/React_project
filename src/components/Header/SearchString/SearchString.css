@@ -1,0 +1,7 @@
+.header .search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 24px; }

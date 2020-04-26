@@ -1,0 +1,16 @@
+.base-wrapper {
+    padding: 20px;
+    display: flex; }
+
+@media screen and (max-width: 1085px) {
+    .base-wrapper {
+        margin: 24px;
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse; }
+}
+
+@media screen and (max-width: 480px) {
+    .base-wrapper {
+        margin: 0; }
+}

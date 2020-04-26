@@ -1,3 +1,4 @@
+const testDrop = () => {
     const cards = document.querySelectorAll('.card');
     let buf;
     let keys = Object.keys(cards); //получаем ключи объекта в виде массива
@@ -33,5 +34,8 @@
         card.addEventListener('drop', dragDrop);
         card.addEventListener('dragover', dragOver);
     });
+}
+
+export default testDrop();
 
 

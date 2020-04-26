@@ -1,0 +1,22 @@
+.calendar-week {
+    padding: 0 24px;
+    border-bottom: 1px solid #EBEFF2; }
+
+.days-week {
+    padding-top: 46px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 27px; }
+
+.date {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #192A3E; }
+
+
+@media screen and (max-width: 480px) {
+    .calendar-wrapper {
+        border-bottom: 1px solid #EBEFF2; }
+}

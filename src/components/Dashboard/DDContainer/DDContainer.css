@@ -1,0 +1,15 @@
+.dd-wrap {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background: #FFFFFF;
+    padding: 15px;
+    box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+    border-radius: 4px; }
+
+@media screen and (max-width: 480px) {
+    .dd-wrap {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+}

@@ -1,0 +1,40 @@
+.progres-wrap {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+
+@media screen and (max-width: 1085px) {
+    .progres-wrap {
+        flex-direction: row;
+        justify-content: center;
+        align-items: inherit;
+        margin-left: 0; }
+}
+
+@media screen and (max-width: 756px) {
+    .progres-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .progres-wrap {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 776px) {
+    .progres-wrap {
+        margin-bottom: 24px;
+    }
+}

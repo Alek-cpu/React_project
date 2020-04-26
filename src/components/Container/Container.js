@@ -1,7 +1,7 @@
 import React from "react";
-import Dashboard from "../Dashboard/Dashboard";
+import Dashboard from "../Dashboard/Dashboard/Dashboard";
 import Contact from "../Contact/Contact";
-import '../../container.css';
+import './container.css';
 import Route from "react-router-dom/es/Route";
 
 

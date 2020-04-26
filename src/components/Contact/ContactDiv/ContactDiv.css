@@ -1,0 +1,12 @@
+.contact-list {
+    border-radius: 4px;
+    background: #FFFFFF;
+    width: 100%; }
+
+@media screen and (max-width: 480px) {
+    .contact-list {
+        border-radius: 0;
+        background: #FFFFFF;
+        width: 100%;
+        margin-bottom: 100px; }
+}

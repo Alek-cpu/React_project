@@ -1,0 +1,15 @@
+.mnu {
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.01em; }
+
+@media screen and (max-width: 480px) {
+    .mnu {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+    .mnu {
+        font-size: 13px;
+        line-height: 19px; }
+}

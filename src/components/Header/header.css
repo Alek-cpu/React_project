@@ -1,0 +1,37 @@
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #FFFFFF;
+    align-items: center;
+    border-bottom: 1px solid #EBEFF2; }
+
+
+
+.header .search-container input, .header .search-container button {
+    border: none;
+    outline: none;
+    background: transparent;
+    display: flex;
+    align-items: center; }
+.header .search-container input {
+    width: 80%;
+    height: 60px; }
+.header .search-container button {
+    cursor: pointer;
+    padding-right: 15px; }
+
+
+
+@media screen and (max-width: 480px) {
+    .header {
+        width: 100%;
+        left: 0;
+        padding: 0 10px;}
+    .header .search-string, .header .notification {
+        margin: 0; }
+}

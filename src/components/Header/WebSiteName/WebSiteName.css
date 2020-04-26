@@ -1,0 +1,27 @@
+.sidebar-name-inner {
+    width: 290px;
+    margin: 0px auto 0px 24px; }
+
+.block-name {
+    padding: 17px 0 17px 0; }
+.block-name .name {
+    color: #109CF1;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px; }
+
+@media screen and (max-width: 1085px) {
+    .sidebar-name-inner {
+        width: 68px;
+        margin: 0;
+        display: flex;
+        text-align: center; }
+}
+@media screen and (max-width: 480px) {
+    .sidebar-name-inner {
+        display: none;
+        border-bottom: none;
+        padding: 0;}
+}

@@ -1,0 +1,52 @@
+.toggle-wrap {
+    padding-left: 24px;
+    position: relative;
+    bottom: 2%; }
+
+.toggle {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #90A0B7; }
+.toggle:hover .fil__svg {
+    fill: #109CF1; }
+
+.mnu-item {
+    display: flex;
+    padding-top: 20px;
+    cursor: pointer; }
+
+.mnu-item__name {
+    padding-left: 16.5px; }
+
+.mnu-item:hover, .mnu-item .mnu-item__name:hover {
+    color: #109CF1; }
+
+@media screen and (max-width: 1085px) {
+    .toggle-wrap {
+        display: flex; }
+    .mnu-item {
+        justify-content: center; }
+    .mnu-item__name {
+        display: none; }
+}
+
+@media screen and (max-width: 480px) {
+    .toggle-wrap {
+        padding-left: 0px;
+        position: relative;
+        bottom: 0; }
+    .mnu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        padding: 0; }
+    .mnu-item__name {
+        display: none; }
+}
+@media screen and (max-width: 756px) {
+    .mnu-item__name {
+        display: none; }
+}

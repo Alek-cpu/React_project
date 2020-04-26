@@ -1,0 +1,18 @@
+.header .search-container .notification {
+    position: relative;
+    cursor: pointer; }
+
+.header .search-container .notification .notification__point::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #F7685B; }
+
+@media screen and (max-width: 480px) {
+    .header .notification {
+        margin: 0; }
+}

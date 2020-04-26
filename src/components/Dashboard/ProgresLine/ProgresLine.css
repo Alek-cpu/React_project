@@ -1,0 +1,18 @@
+.wrap__progress-line {
+    padding-top: 16px;
+    padding-bottom: 20px;
+    width: 100%; }
+
+.progress-line {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background: #EBEFF2;
+    border-radius: 3px; }
+.progress-line::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 80%;
+    background: #2ED47A;
+    border-radius: 3px; }
