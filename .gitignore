@@ -1,5 +1,4 @@
-echo ".idea" > .gitignore
-echo "node_modules" > .gitignore
-
 .idea
 node_modules
+src/serviceWorker.js
+src/setupTest.js
