@@ -1,5 +1,5 @@
 .idea
-node_modulessrc
+node_modules
 src/setupTests.js
 src/serviceWorker.js
 App.test.js
