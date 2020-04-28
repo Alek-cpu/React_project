@@ -38,5 +38,5 @@ const collapseMnu = () => {
     }
 }
 
-export default collapseMnu();
+export default collapseMnu;
 

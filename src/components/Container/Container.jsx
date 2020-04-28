@@ -10,8 +10,8 @@ const ContainerDiv = () => {
 
             <div className="container">
                 <div className="content">
-                    <Route path='/dashboard' component={Dashboard}/>
-                    <Route path='/contact' component={Contact}/>
+                    <Route path='/dashboard' render={ () => <Dashboard /> }/>
+                    <Route path='/contact' render={ () => <Contact />}/>
                 </div>
             </div>
     );
