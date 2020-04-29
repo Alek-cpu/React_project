@@ -1,12 +1,12 @@
 import React from "react";
-import Calendar from "../Calendar/Calendar";
 import Stat from "../Stat/Stat";
 import './ProgressDiv.css';
+import ReactCalendar from "../Calendar/Calendar";
 
 const ProgressDiv = () => {
     return (
         <div className="progres-wrap">
-            <Calendar />
+            <ReactCalendar />
             <Stat />
         </div>
     );

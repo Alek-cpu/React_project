@@ -4,9 +4,9 @@ import MiniInfo from "./MiniInfo/MiniInfo";
 import Navigation from "./NavigationItem/NavigationItem";
 import SettingItem from "./SettingItem/SettingItem";
 import ToggleSidebar from "./ToggleSidebar/ToggleSidebar";
-import collapseMnu from "../../js/collapseMnu";
 import './sidebar.css';
 import userPhoto from './../../assets/image 2.png';
+
 
 
 const Sidebar = () => {

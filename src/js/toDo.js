@@ -62,4 +62,4 @@ const toDo = () => {
     mainCheckbox.addEventListener('change', checkAllSelected);
 }
 
-export default toDo();
+export default toDo;

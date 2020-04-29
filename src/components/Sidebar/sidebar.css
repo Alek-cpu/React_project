@@ -9,6 +9,11 @@
     padding-top: 60px;
     transition: .15s; }
 
+.sidebar .goSidebar {
+    position: fixed;
+    width: 80px;
+    transition: .2s; }
+
 @media screen and (max-width: 1085px) {
     .sidebar {
         width: 68px; }

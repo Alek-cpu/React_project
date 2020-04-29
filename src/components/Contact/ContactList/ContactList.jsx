@@ -2,6 +2,7 @@ import React from "react";
 import ContactDiv from "../ContactDiv/ContactDiv";
 import './ContactList.css';
 import InfoLine from "../InfoLine/InfoLine";
+import toDo from "../../../js/toDo";
 
 
 let usersInfo = [
@@ -100,12 +101,17 @@ let usersInfo = [
 ];
 
 
-const ContactList = () => {
+export let ContactList = () => {
+    let checkedToDo = (checkedInf) => {
+        let newChecked = {
+            id:checkedInf,
+        }
+    }
 
     return (
         <div className="contact-inner">
             <div className="wrapperTable">
-                <ContactDiv usersInfo={usersInfo}/>
+                <ContactDiv usersInfo={usersInfo} />
             </div>
         </div>
     );

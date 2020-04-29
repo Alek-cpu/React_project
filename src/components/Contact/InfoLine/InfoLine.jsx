@@ -1,8 +1,11 @@
 import React from "react";
 import './InfoLine.css';
 import userAvatar from './../../../assets/image 2 (1).png';
+import toDo from "../../../js/toDo";
 
 const InfoLine = (props) => {
+    const link = React.createRef();
+
     return (
         <tr className="info-line">
             <td>
