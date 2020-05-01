@@ -10,13 +10,7 @@ const getItems = count =>
         content: `item ${k}`
     }));
 
-// let cardLines =
-//     props.cardInfo.map( c => (<Card eventName={c.eventName}
-//                                  dueDate={c.dueDate}
-//                                  userName={c.userName}
-//                                  identicalStatus={c.identicalStatus}
-//                                  statusName={c.statusName}
-//     />));
+
 
 
 // a little function to help us with reordering the result
@@ -44,7 +38,7 @@ const getItemStyle = (isDragging, draggableStyle) => ({
 });
 
 const getListStyle = isDraggingOver => ({
-    background: isDraggingOver ? "lightblue" : "lightgrey",
+    // background: isDraggingOver ? "lightblue" : "lightgrey",
     padding: grid,
     width: `${100}%`
 });
@@ -57,6 +51,14 @@ class Cards extends Component {
         };
         this.onDragEnd = this.onDragEnd.bind(this);
     }
+
+    // let cardLines =
+    //     props.cardInfo.map( c => (<Card eventName={c.eventName}
+    //                                     dueDate={c.dueDate}
+    //                                     userName={c.userName}
+    //                                     identicalStatus={c.identicalStatus}
+    //                                     statusName={c.statusName}
+    //     />));
 
     onDragEnd(result) {
         // dropped outside the list
@@ -100,7 +102,7 @@ class Cards extends Component {
                             {this.state.items.map((item, index) => (
                                 <Draggable key={item.id} draggableId={item.id} index={index}>
                                     {(provided, snapshot) => (
-                                        <div
+                                        <div className="drag-drop-wrapper"
                                             ref={provided.innerRef}
                                             {...provided.draggableProps}
                                             {...provided.dragHandleProps}
