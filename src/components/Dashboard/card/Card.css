@@ -1,0 +1,120 @@
+.card {
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    padding: 16px;
+    /*margin-top: 24px; */
+}
+.card:hover {
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.14); }
+
+.event-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; }
+
+.events__name {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #323C47; }
+
+.events-date {
+    display: flex; }
+
+.due {
+    padding-right: 5px;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #4C5862; }
+
+.due__date {
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #4C5862; }
+
+.person-block {
+    padding-top: 22px;
+    display: flex;
+    align-items: center; }
+
+.person-photo {
+    width: 24px;
+    height: 24px; }
+
+.mini__photo {
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.person__name {
+    padding-left: 12px;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #707683; }
+
+.identical-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+.identical-status_inner {
+    display: flex;
+    justify-content: flex-end; }
+
+.identical__status {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: right;
+    letter-spacing: 0.01em;
+    color: #90A0B7; }
+
+.status-event {
+    display: flex; }
+
+.edit-control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    opacity: 0;
+    cursor: pointer; }
+.card:hover .edit-control {
+    opacity: 1;
+    transition: .2s; }
+
+.eclipse {
+    padding-right: 8px; }
+
+.control {
+    margin-left: 10px; }
+
+.deleted:hover .basket {
+    fill: #F7685B; }
+
+.status__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 84px;
+    height: 22px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.02em; }
+
+.complited {
+    background: #2ED47A; }
+
+@media screen and (max-width: 480px) {
+    .mini__photo {
+        border-radius: 50%;
+        margin-right: 0px;
+    }
+}
+

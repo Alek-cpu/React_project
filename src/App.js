@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './styles/App.css';
 import Header from "./components/Header/Header";
 import Sidebar from "./components/Sidebar/Sidebar";
 import ContainerDiv from "./components/Container/Container";
@@ -10,7 +10,7 @@ function App() {
         <BrowserRouter>
             <div className="App">
                 <Header/>
-                <Sidebar/>
+                <Sidebar />
                 <ContainerDiv/>
             </div>
         </BrowserRouter>
