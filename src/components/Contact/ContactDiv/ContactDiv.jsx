@@ -1,8 +1,8 @@
 import React, {Component} from "react";
-import HeaderInfoLine from "../header-info-line/HeaderInfoLine";
-import InfoLine from "../info-line/InfoLine";
+import HeaderInfoLine from "../HeaderInfoLine/HeaderInfoLine";
+import InfoLine from "../InfoLine/InfoLine";
 import './ContactDiv.css';
-import {ContactList} from "../contact-list/ContactList";
+import {ContactList} from "../ContactList/ContactList";
 import toDo from "../../../action/toDo";
 
 

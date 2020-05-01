@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Card from "../card/Card";
+import Card from "../Card/Card";
 import './Cards.css';
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 

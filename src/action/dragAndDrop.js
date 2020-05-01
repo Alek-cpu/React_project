@@ -1,5 +1,5 @@
 const removeCard = () => {
-    const cards = document.querySelectorAll('.card');
+    const cards = document.querySelectorAll('.Card');
     const baskets = document.querySelectorAll('.deleted');
 
         cards.forEach((card, j) => {

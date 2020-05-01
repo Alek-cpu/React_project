@@ -1,6 +1,7 @@
 import React from "react";
 import './InfoLine.css';
 import userAvatar from './../../../assets/image 2 (1).png';
+import CheckboxInfoLine from "../../forms/CheckboxInfoLine/CheckboxInfoLine";
 
 const InfoLine = (props) => {
     const link = React.createRef();
@@ -8,10 +9,7 @@ const InfoLine = (props) => {
     return (
         <tr className="info-line">
             <td>
-                <form className="row-space-cbx">
-                    <input type="checkbox" className="form__cbx chield" id={props.id}/><label
-                    htmlFor={props.id} onChange={props.onChange}></label>
-                </form>
+                <CheckboxInfoLine onChange={props.onChange} id={props.id}/>
             </td>
             <td className="profile__name">
                 <div className="list-header-photo"><img

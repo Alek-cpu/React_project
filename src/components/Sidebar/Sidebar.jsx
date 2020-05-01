@@ -1,10 +1,10 @@
 import React from "react";
-import UserNav from "./user-sidebar/UserSidebar";
-import MiniInfo from "./mini-info/MiniInfo";
-import Navigation from "./navigation-item/NavigationItem";
-import SettingItem from "./setting-item/SettingItem";
-import ToggleSidebar from "./toggle-sidebar/ToggleSidebar";
-import './sidebar.css';
+import UserNav from "./UserSidebar/UserSidebar";
+import MiniInfo from "./MiniInfo/MiniInfo";
+import Navigation from "./NavigationItem/NavigationItem";
+import SettingItem from "./SettingItem/SettingItem";
+import ToggleSidebar from "./ToggleSidebar/ToggleSidebar";
+import './Sidebar.css';
 import userPhoto from './../../assets/image 2.png';
 
 

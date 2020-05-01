@@ -1,5 +1,5 @@
 const testDrop = () => {
-    const cards = document.querySelectorAll('.card');
+    const cards = document.querySelectorAll('.Card');
     let buf;
     let keys = Object.keys(cards); //получаем ключи объекта в виде массива
     console.log(cards[keys[0]]); // первый элемент

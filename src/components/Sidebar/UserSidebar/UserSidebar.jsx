@@ -1,6 +1,6 @@
 import React from "react";
-import MiniInfo from '../mini-info/MiniInfo';
-import Navigation from "../navigation-item/NavigationItem";
+import MiniInfo from '../MiniInfo/MiniInfo';
+import Navigation from "../NavigationItem/NavigationItem";
 import './UserSidebar.css';
 
 

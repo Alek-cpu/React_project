@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import ContactDiv from "../contact-div/ContactDiv";
+import ContactDiv from "../ContactDiv/ContactDiv";
 import './ContactList.css';
-import InfoLine from "../info-line/InfoLine";
+import InfoLine from "../InfoLine/InfoLine";
 
 
 let usersInfo = [

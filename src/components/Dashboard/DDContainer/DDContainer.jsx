@@ -1,9 +1,9 @@
 import React from "react";
-import ProgresCheck from "../progres-check/ProgresCheck";
-import CalendarWeek from "../calendar-week/CalendarWeek";
+import ProgresCheck from "../ProgresCheck/ProgresCheck";
+import CalendarWeek from "../CalendarWeek/CalendarWeek";
 import DragAndDrop from "../DragAndDrop";
 import testDrop from "../../../action/testDrop";
-import ShowMore from "../show-more/ShowMore";
+import ShowMore from "../ShowMore/ShowMore";
 import './DDContainer.css';
 
 const DDContainer= () => {

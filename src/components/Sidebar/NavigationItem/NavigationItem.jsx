@@ -1,10 +1,10 @@
 import React from "react";
-import DashboardItem from "../item/DashboardItem";
-import TaskItem from "../item/TaskItem";
-import EmailItem from "../item/EmailItem";
-import ContactItem from "../item/ContactItem";
-import ChatItem from "../item/ChatItem";
-import DealsItem from "../item/DealsItem";
+import DashboardItem from "../Item/DashboardItem";
+import TaskItem from "../Item/TaskItem";
+import EmailItem from "../Item/EmailItem";
+import ContactItem from "../Item/ContactItem";
+import ChatItem from "../Item/ChatItem";
+import DealsItem from "../Item/DealsItem";
 import {NavLink} from "react-router-dom";
 import './NavigationItem.css';
 

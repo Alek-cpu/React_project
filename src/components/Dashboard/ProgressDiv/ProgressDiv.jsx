@@ -1,7 +1,7 @@
 import React from "react";
-import Stat from "../stat/Stat";
+import Stat from "../Stat/Stat";
 import './ProgressDiv.css';
-import ReactCalendar from "../calendar/Calendar";
+import ReactCalendar from "../Calendar/Calendar";
 
 const ProgressDiv = () => {
     return (

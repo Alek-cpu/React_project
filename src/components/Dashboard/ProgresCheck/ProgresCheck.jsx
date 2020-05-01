@@ -1,5 +1,5 @@
 import React from "react";
-import Task from "../task/Task";
+import Task from "../Task/Task";
 import ProgresLine from "../progres-line/ProgresLine";
 import './ProgresCheck.css';
 

@@ -1,14 +1,12 @@
 import React from "react";
 import './HeaderInfoLine.css';
+import CbxHeaderInfoLine from "../../forms/CbxHeaderInfoLine/CbxHeaderInfoLine";
 
 const HeaderInfoLine = (props) => {
     return (
         <tr className="header-line">
             <th className="row-space">
-                <form className="row-space-cbx">
-                    <input type="checkbox" className="form__cbx countTask" id="checkbox" onChange={props.onChange} /><label
-                    htmlFor="checkbox"></label>
-                </form>
+                <CbxHeaderInfoLine onChange={props.onChange}/>
             </th>
             <th className="nohide hide">
                 <div className="wrapperSpan">

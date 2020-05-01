@@ -3,13 +3,13 @@ const collapseMnu = () => {
     const toggleSidebar = document.querySelector('.toggle-wrap .toggle');
     const svgColor = document.querySelector('.toggle .fil__svg');
     const profileMnuItem = document.querySelector('nav.mnu');
-    const items = profileMnuItem.querySelectorAll('nav.mnu > a > div.mnu-item > div.mnu-item__name');
+    const items = profileMnuItem.querySelectorAll('nav.mnu > a > div.mnu-Item > div.mnu-item__name');
     const profileContainer = document.querySelector('div.Sidebar-Container');
-    const SetItems = profileContainer.querySelectorAll('.setItem > .mnu-item > .mnu-item__name');
+    const SetItems = profileContainer.querySelectorAll('.setItem > .mnu-Item > .mnu-item__name');
     const profileInfoDiv = document.querySelector('.profile-block');
     const profileInfoElem = profileInfoDiv.querySelectorAll('.profile-block > .profileTxtElem');
     const containerSwitch = document.querySelector('.Container');
-    const sidebarInner = document.querySelector('.profile, .mnu-item');
+    const sidebarInner = document.querySelector('.profile, .mnu-Item');
     const shortName = document.querySelector('div.name span.kit');
     const sidebarInnerCheck = document.querySelector('.Sidebar-name-inner');
 
