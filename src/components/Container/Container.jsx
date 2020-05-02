@@ -4,17 +4,16 @@ import Contact from "../../screens/Contact/Contact";
 import './container.css';
 import Route from "react-router-dom/es/Route";
 
-
-const ContainerDiv = () => {
+const ContainerDiv = (props) => {
 
     return (
             <div className="container">
                 <div className="content">
                     <Route
-                       path='/dashboard' render={ () => <Dashboard /> }
+                       path='/dashboard' render={ () => <Dashboard cardData={props.cardData} /> }
                     />
                     <Route
-                        path='/contact' render={ () => <Contact />}
+                        path='/contact' render={ () => <Contact userDataInfo={props.userDataInfo} />}
                     />
                 </div>
             </div>

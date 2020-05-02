@@ -3,34 +3,6 @@ import Card from "../Card/Card";
 import './Cards.css';
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
-const getItems = count =>
-    [
-        {
-            id: `r2d2`,
-            eventName: "Send benefit review by Sunday",
-            dueDate: "December 23, 2020",
-            userName: "George Fields",
-            identicalStatus: "Reminder",
-            statusName: "Completed"
-        },
-        {
-            id: `r2d3`,
-            eventName: "Invite to office meet-up",
-            dueDate: "December 22, 2019",
-            userName: "Rebecca Moore",
-            identicalStatus: "Call",
-            statusName: "Ended"
-        },
-        {
-            id: `r2d4`,
-            eventName: "Office meet-up",
-            dueDate: "December 21, 2018",
-            userName: "Lindsey Stroud",
-            identicalStatus: "Event",
-            statusName: "Completed"
-        }
-    ]
-
 const reorder = (list, startIndex, endIndex) => {
     const result = Array.from(list);
     const [removed] = result.splice(startIndex, 1);
@@ -56,7 +28,7 @@ class Cards extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            items: getItems(3)
+            items: props.cardsData(3)
         };
         this.onDragEnd = this.onDragEnd.bind(this);
     }
@@ -104,7 +76,6 @@ class Cards extends Component {
                                                 userName={item.userName}
                                                 identicalStatus={item.identicalStatus}
                                                 statusName={item.statusName}
-                                                id={item.id}
                                             />
                                         </div>
                                     )}

@@ -5,7 +5,7 @@ import ProgresCheck from "../../components/Dashboard/ProgresCheck/ProgresCheck";
 import Task from "../../components/Dashboard/Task/Task";
 import ProgresCompl from "../../components/Dashboard/ProgresCompl/ProgresCompl";
 import DataFilter from "../../components/forms/DataFilter/DataFilter";
-import ProgresLine from "../../components/Dashboard/progres-line/ProgresLine";
+import ProgresLine from "../../components/Dashboard/ProgresLine/ProgresLine";
 import CalendarWeek from "../../components/Dashboard/CalendarWeek/CalendarWeek";
 import Day from "../../components/Dashboard/Day/Day";
 import DragAndDrop from "../../components/Dashboard/DragAndDrop/DragAndDrop";
@@ -14,10 +14,10 @@ import Card from "../../components/Dashboard/Card/Card";
 import ShowMore from "../../components/Dashboard/ShowMore/ShowMore";
 import './Dashboard.css';
 
-const Dashboard = () => {
+const Dashboard = (props) => {
     return (
         <div className="base-wrapper">
-            <DDContainer />
+            <DDContainer cardData={props.cardData} />
             <ProgressDiv />
         </div>
     );

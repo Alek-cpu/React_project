@@ -1,6 +1,6 @@
 import React from "react";
 import Task from "../Task/Task";
-import ProgresLine from "../progres-line/ProgresLine";
+import ProgresLine from "../ProgresLine/ProgresLine";
 import './ProgresCheck.css';
 
 const ProgresCheck = () => {

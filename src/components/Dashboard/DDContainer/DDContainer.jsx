@@ -6,12 +6,12 @@ import testDrop from "../../../action/testDrop";
 import ShowMore from "../ShowMore/ShowMore";
 import './DDContainer.css';
 
-const DDContainer= () => {
+const DDContainer= (props) => {
     return (
         <div className="dd-wrap">
             <ProgresCheck />
             <CalendarWeek />
-            <DragAndDrop />
+            <DragAndDrop cardData={props.cardData} />
             <ShowMore />
         </div>
     );

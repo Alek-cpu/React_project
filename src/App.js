@@ -5,13 +5,18 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import ContainerDiv from "./components/Container/Container";
 import {BrowserRouter} from "react-router-dom";
 
-function App() {
+
+
+function App(props) {
     return (
         <BrowserRouter>
             <div className="App">
                 <Header/>
                 <Sidebar />
-                <ContainerDiv/>
+                <ContainerDiv
+                    userDataInfo={props.userDataInfo}
+                    cardData={props.cardData}
+                />
             </div>
         </BrowserRouter>
     );

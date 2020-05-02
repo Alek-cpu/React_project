@@ -5,8 +5,6 @@ import './ContactDiv.css';
 import {ContactList} from "../ContactList/ContactList";
 import toDo from "../../../action/toDo";
 
-
-
 const ContactDiv = (props) => {
     let infoLines =
         props.usersInfo.map( inf => (<InfoLine

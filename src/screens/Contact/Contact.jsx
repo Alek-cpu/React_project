@@ -8,11 +8,13 @@ import HeaderInfoLine from "../../components/Contact/HeaderInfoLine/HeaderInfoLi
 import InfoLine from "../../components/Contact/InfoLine/InfoLine";
 import './Contact.css';
 
-const Contact = () => {
+
+
+const Contact = (props) => {
     return (
         <div className="contact">
             <ContactCommand />
-            <ContactList />
+            <ContactList userInfoData={props.userDataInfo}/>
         </div>
     );
 }
