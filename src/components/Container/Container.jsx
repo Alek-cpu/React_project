@@ -10,7 +10,7 @@ const ContainerDiv = (props) => {
             <div className="container">
                 <div className="content">
                     <Route
-                       path='/dashboard' render={ () => <Dashboard cardData={props.cardData} /> }
+                       path='/dashboard' render={ () => <Dashboard /> }
                     />
                     <Route
                         path='/contact' render={ () => <Contact userDataInfo={props.userDataInfo} />}

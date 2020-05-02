@@ -17,7 +17,7 @@ import './Dashboard.css';
 const Dashboard = (props) => {
     return (
         <div className="base-wrapper">
-            <DDContainer cardData={props.cardData} />
+            <DDContainer />
             <ProgressDiv />
         </div>
     );

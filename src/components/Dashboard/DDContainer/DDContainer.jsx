@@ -11,7 +11,7 @@ const DDContainer= (props) => {
         <div className="dd-wrap">
             <ProgresCheck />
             <CalendarWeek />
-            <DragAndDrop cardData={props.cardData} />
+            <DragAndDrop />
             <ShowMore />
         </div>
     );

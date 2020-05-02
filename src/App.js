@@ -15,7 +15,6 @@ function App(props) {
                 <Sidebar />
                 <ContainerDiv
                     userDataInfo={props.userDataInfo}
-                    cardData={props.cardData}
                 />
             </div>
         </BrowserRouter>
