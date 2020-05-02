@@ -6,12 +6,12 @@ import Route from "react-router-dom/es/Route";
 
 
 const ContainerDiv = () => {
-    return (
 
+    return (
             <div className="container">
                 <div className="content">
                     <Route
-                        path='/dashboard' render={ () => <Dashboard /> }
+                       path='/dashboard' render={ () => <Dashboard /> }
                     />
                     <Route
                         path='/contact' render={ () => <Contact />}
