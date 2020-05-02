@@ -4,10 +4,32 @@ import './Cards.css';
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
 const getItems = count =>
-    Array.from({ length: count }, (v, k) => k).map(k => ({
-        id: `item-${k}`,
-        content: `item ${k}`
-    }));
+    [
+        {
+            id: `r2d2`,
+            eventName: "Send benefit review by Sunday",
+            dueDate: "December 23, 2020",
+            userName: "George Fields",
+            identicalStatus: "Reminder",
+            statusName: "Completed"
+        },
+        {
+            id: `r2d3`,
+            eventName: "Invite to office meet-up",
+            dueDate: "December 22, 2019",
+            userName: "Rebecca Moore",
+            identicalStatus: "Call",
+            statusName: "Ended"
+        },
+        {
+            id: `r2d4`,
+            eventName: "Office meet-up",
+            dueDate: "December 21, 2018",
+            userName: "Lindsey Stroud",
+            identicalStatus: "Event",
+            statusName: "Completed"
+        }
+    ]
 
 const reorder = (list, startIndex, endIndex) => {
     const result = Array.from(list);
@@ -19,16 +41,14 @@ const reorder = (list, startIndex, endIndex) => {
 const grid = 8;
 
 const getItemStyle = (isDragging, draggableStyle) => ({
-    userSelect: "none",
-    padding: grid * 2,
-    margin: `0 0 ${grid}px 0`,
+    margin: `${grid}px 0 0 0`,
 
-    background: isDragging ? "lightgreen" : "grey",
+    background: isDragging ? "lightgreen" : "none",
     ...draggableStyle
 });
 
 const getListStyle = isDraggingOver => ({
-    padding: grid,
+    // padding: grid,
     width: `${100}%`
 });
 
@@ -78,7 +98,14 @@ class Cards extends Component {
                                                 provided.draggableProps.style
                                             )}
                                         >
-                                            {item.content}
+                                            <Card
+                                                eventName={item.eventName}
+                                                dueDate={item.dueDate}
+                                                userName={item.userName}
+                                                identicalStatus={item.identicalStatus}
+                                                statusName={item.statusName}
+                                                id={item.id}
+                                            />
                                         </div>
                                     )}
                                 </Draggable>

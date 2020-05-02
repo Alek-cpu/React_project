@@ -103,7 +103,9 @@ const ContactList = () =>{
     return (
         <div className="contact-inner">
             <div className="wrapperTable">
-                <ContactDiv usersInfo={usersInfo} />
+                <ContactDiv
+                    usersInfo={usersInfo}
+                />
             </div>
         </div>
     );

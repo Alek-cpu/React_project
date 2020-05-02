@@ -1,6 +1,6 @@
 import React from "react";
-import NotificationBtn from "../../forms/notification/Notification";
-import SearchStringForm from "../../forms/input-search-string/InputSearchString";
+import NotificationBtn from "../../forms/Notification/Notification";
+import SearchStringForm from "../../forms/InputSearchString/InputSearchString";
 import './SearchString.css';
 
 const SearchString = () => {

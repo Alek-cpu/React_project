@@ -1,5 +1,6 @@
 import React from "react";
 import './Stat.css';
+import ContactSortList from "../../forms/ContactSortList/ContactSortList";
 
 const Stat = () => {
     return (
@@ -10,15 +11,7 @@ const Stat = () => {
                     <div className="data-filter">
                         <div className="contact-sort">
                             Show:
-                            <form>
-                                <select className="contact-sort__list" size="1">
-                                    <option>This month</option>
-                                    <option>This week</option>
-                                    <option>NeAll</option>
-                                    <option>NeAll</option>
-                                    <option>NeAll</option>
-                                </select>
-                            </form>
+                            <ContactSortList />
                         </div>
                     </div>
                 </div>

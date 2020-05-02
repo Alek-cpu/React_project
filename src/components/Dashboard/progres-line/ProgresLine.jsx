@@ -1,4 +1,5 @@
 import React from "react";
+import "./ProgresLine.css";
 
 const ProgresLine = () => {
     return (

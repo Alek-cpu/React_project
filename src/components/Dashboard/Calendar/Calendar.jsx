@@ -12,11 +12,12 @@ const ReactCalendar = () => {
 
     return (
       <div>
-          <Calendar onChange={onChange}
-                    value={date}
-                    showNeighboringMonth={false}
-                    DecadeView={false}
-                    CenturyView={false}
+          <Calendar
+              onChange={onChange}
+              value={date}
+              showNeighboringMonth={false}
+              DecadeView={false}
+              CenturyView={false}
           />
       </div>
     );

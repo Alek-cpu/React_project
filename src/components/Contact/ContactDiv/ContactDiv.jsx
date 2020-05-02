@@ -9,18 +9,21 @@ import toDo from "../../../action/toDo";
 
 const ContactDiv = (props) => {
     let infoLines =
-        props.usersInfo.map( inf => (<InfoLine onChange={toDo} id={inf.id}
-                                         userName={inf.userName}
-                                         email={inf.email}
-                                         companyName={inf.companyName}
-                                         role={inf.role}
-                                         forecast={inf.forecast}
-                                         date={inf.date}
+        props.usersInfo.map( inf => (<InfoLine
+            onChange={toDo} id={inf.id}
+            userName={inf.userName}
+            email={inf.email}
+            companyName={inf.companyName}
+            role={inf.role}
+            forecast={inf.forecast}
+            date={inf.date}
         />));
 
     return (
         <table className="contact-list">
-            <HeaderInfoLine onChange={toDo} />
+            <HeaderInfoLine
+                onChange={toDo}
+            />
             {infoLines}
         </table>
     );

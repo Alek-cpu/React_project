@@ -9,18 +9,21 @@ const InfoLine = (props) => {
     return (
         <tr className="info-line">
             <td>
-                <CheckboxInfoLine onChange={props.onChange} id={props.id}/>
+                <CheckboxInfoLine
+                    onChange={props.onChange}
+                    id={props.id}
+                />
             </td>
             <td className="profile__name">
-                <div className="list-header-photo"><img
-                    className="mini__photo" src={userAvatar} alt=""/></div>
+                <div className="list-header-photo">
+                    <img className="mini__photo" src={userAvatar} alt=""/></div>
                 <div className="list-header__name">{props.userName}</div>
             </td>
             <td>{props.email}</td>
             <td>{props.companyName}</td>
             <td>{props.role}</td>
             <td>{props.forecast}</td>
-            <td className="last__td">{props.date}</td>
+            <td className="last__td" >{props.date}</td>
         </tr>
     );
 }

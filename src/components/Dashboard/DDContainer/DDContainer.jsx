@@ -1,7 +1,7 @@
 import React from "react";
 import ProgresCheck from "../ProgresCheck/ProgresCheck";
 import CalendarWeek from "../CalendarWeek/CalendarWeek";
-import DragAndDrop from "../DragAndDrop";
+import DragAndDrop from "../DragAndDrop/DragAndDrop";
 import testDrop from "../../../action/testDrop";
 import ShowMore from "../ShowMore/ShowMore";
 import './DDContainer.css';

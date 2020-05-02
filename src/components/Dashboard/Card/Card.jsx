@@ -1,11 +1,10 @@
 import React from "react";
 import userAvatar from "./../../../assets/image4 4.png"
 import './Card.css';
-import removeCard from "../../../action/dragAndDrop";
 
 const Card = (props) => {
     return (
-        <div className="card">
+        <div className="card" id={props.id}>
             <div className="event-wrap">
                 <div className="info-event_inner">
                     <div className="events__name">{props.eventName}</div>
@@ -46,7 +45,7 @@ const Card = (props) => {
                                         fill="#C2CFE0"/>
                                 </svg>
                             </div>
-                            <div className="control deleted" onClick={removeCard}>
+                            <div className="control deleted">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path className="basket"

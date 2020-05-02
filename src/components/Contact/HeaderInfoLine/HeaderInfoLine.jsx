@@ -6,7 +6,9 @@ const HeaderInfoLine = (props) => {
     return (
         <tr className="header-line">
             <th className="row-space">
-                <CbxHeaderInfoLine onChange={props.onChange}/>
+                <CbxHeaderInfoLine
+                    onChange={props.onChange}
+                />
             </th>
             <th className="nohide hide">
                 <div className="wrapperSpan">

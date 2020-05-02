@@ -1,0 +1,14 @@
+.contact-sort__list {
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    height: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #109CF1;
+    background: none;
+    overflow: hidden;
+    -webkit-appearance: none;
+    -moz-appearance: none; }
