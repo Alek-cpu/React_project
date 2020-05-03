@@ -7,9 +7,7 @@ const ContactList = (props) =>{
     return (
         <div className="contact-inner">
             <div className="wrapperTable">
-                <ContactDiv
-                    usersInfo={props.userInfoData}
-                />
+                <ContactDiv />
             </div>
         </div>
     );

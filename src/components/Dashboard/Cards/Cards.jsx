@@ -3,33 +3,42 @@ import Card from "../Card/Card";
 import './Cards.css';
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
-const getItems = count =>
-    [
-        {
-            id: `r2d2`,
-            eventName: "Send benefit review by Sunday",
-            dueDate: "December 23, 2020",
-            userName: "George Fields",
-            identicalStatus: "Reminder",
-            statusName: "Completed"
-        },
-        {
-            id: `r2d3`,
-            eventName: "Invite to office meet-up",
-            dueDate: "December 22, 2019",
-            userName: "Rebecca Moore",
-            identicalStatus: "Call",
-            statusName: "Ended"
-        },
-        {
-            id: `r2d4`,
-            eventName: "Office meet-up",
-            dueDate: "December 21, 2018",
-            userName: "Lindsey Stroud",
-            identicalStatus: "Event",
-            statusName: "Completed"
-        }
-    ]
+const arrayCard = [
+    {
+        id: `r2d2`,
+        eventName: "Send benefit review by Sunday",
+        dueDate: "December 23, 2020",
+        userName: "George Fields",
+        identicalStatus: "Reminder",
+        statusName: "Completed"
+    },
+    {
+        id: `r2d3`,
+        eventName: "Invite to office meet-up",
+        dueDate: "December 22, 2019",
+        userName: "Rebecca Moore",
+        identicalStatus: "Call",
+        statusName: "Ended"
+    },
+    {
+        id: `r2d4`,
+        eventName: "Office meet-up",
+        dueDate: "December 21, 2018",
+        userName: "Lindsey Stroud",
+        identicalStatus: "Event",
+        statusName: "Completed"
+    }
+]
+
+const getItems = count => arrayCard.map(el => ({
+    id: el.id,
+    eventName: el.eventName,
+    dueDate: el.dueDate,
+    userName: el.userName,
+    identicalStatus: el.identicalStatus,
+    statusName: el.statusName
+}))
+
 
 const reorder = (list, startIndex, endIndex) => {
     const result = Array.from(list);

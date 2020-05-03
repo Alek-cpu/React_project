@@ -14,7 +14,7 @@ const Contact = (props) => {
     return (
         <div className="contact">
             <ContactCommand />
-            <ContactList userInfoData={props.userDataInfo}/>
+            <ContactList />
         </div>
     );
 }

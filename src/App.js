@@ -13,9 +13,7 @@ function App(props) {
             <div className="App">
                 <Header/>
                 <Sidebar />
-                <ContainerDiv
-                    userDataInfo={props.userDataInfo}
-                />
+                <ContainerDiv />
             </div>
         </BrowserRouter>
     );
