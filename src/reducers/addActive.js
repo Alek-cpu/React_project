@@ -1,3 +1,9 @@
-export default function (state=null, action) {
-
+export default function (state=[], action) {
+    switch (action.type) {
+        case "ADD_CONTACT":
+            return action.payload;
+            break;
+        default:
+            return state;
+    }
 }

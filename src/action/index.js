@@ -1,5 +1,5 @@
 export const addContact = (contact) => {
-    alert( `You work - ${contact.companyName} company`);
+    // contact = prompt(`Введите Имя`);
     return {
         type: "ADD_CONTACT",
         payload: contact
