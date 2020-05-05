@@ -1,5 +1,5 @@
 import React from "react";
-import './ShowMore.css';
+import '../../../styles/ShowMore.scss';
 
 const ShowMore = () => {
     return (

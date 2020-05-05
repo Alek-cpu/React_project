@@ -2,20 +2,20 @@ import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import CheckboxInfoLine from "../components/forms/CheckboxInfoLine/CheckboxInfoLine";
-import userAvatar from "../assets/image 2 (1).png";
+import userAvatar from "../img/image 2 (1).png";
 import toDo from "../action/toDo";
-import "./../components/Contact/InfoLine/InfoLine.css";
-import "./../components/forms/CheckboxInfoLine/CheckboxInfoLine.css";
+import "../styles/CheckboxInfoLine.scss";
+import {addContact} from './../action/index';
 
 class ContactList extends Component {
 
     showItem() {
         return this.props.infLine.map((inf) => {
             return (
-                <tr className="info-line" id={inf.id}>
-                    <td id={inf.id}>
+                <tr className="info-line">
+                    <td>
                         <form className="row-space-cbx">
-                            <input type="checkbox" className="form__cbx chield" id={inf.id}/><label
+                            <input onChange={() => this.props.addContact (inf)} type="checkbox" className="form__cbx chield" id={inf.id} /><label
                             htmlFor={inf.id}></label>
                         </form>
                     </td>
@@ -33,7 +33,6 @@ class ContactList extends Component {
             );
         });
     }
-
     render() {
         return (
             this.showItem()
@@ -41,10 +40,14 @@ class ContactList extends Component {
     }
 }
 
-function mapStateToProps(state) {
+function mapStateToProps (state) {
     return {
         infLine: state.infLine
     }
 }
 
-export default connect(mapStateToProps)(ContactList);
+function matchDispatchToProps (dispatch) {
+    return bindActionCreators({addContact: addContact}, dispatch)
+}
+
+export default connect(mapStateToProps, matchDispatchToProps)(ContactList);

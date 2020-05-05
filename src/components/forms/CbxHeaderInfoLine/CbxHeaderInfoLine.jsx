@@ -1,5 +1,5 @@
 import React from "react";
-import "./CbxHeaderInfoLine.css";
+import '../../../styles/CbxHeaderInfoLine.scss';
 
 
 const CbxHeaderInfoLine = (props) => {

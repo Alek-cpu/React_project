@@ -1,5 +1,5 @@
 import React from "react";
-import './InputSearchString.css';
+import '../../../styles/InputSearchString.scss';
 
 class SearchStringForm extends React.Component {
     constructor(props) {

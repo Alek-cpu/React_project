@@ -1,6 +1,6 @@
 import React from "react";
-import './HeaderInfoLine.css';
 import CbxHeaderInfoLine from "../../forms/CbxHeaderInfoLine/CbxHeaderInfoLine";
+import '../../../styles/HeaderInfoLine.scss';
 
 const HeaderInfoLine = (props) => {
     return (

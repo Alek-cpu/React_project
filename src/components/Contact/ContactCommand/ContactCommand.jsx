@@ -1,7 +1,7 @@
 import React from "react";
-import ContactSort from "../../forms/contact-sort/ContactSort";
+import ContactSort from "../../forms/ContactSort/ContactSort";
 import ContactAdd from "../../forms/ContactAdd/ContactAdd";
-import './ContactCommand.css';
+import '../../../styles/ContactCommand.scss';
 
 const ContactCommand = () => {
     return (

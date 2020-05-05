@@ -1,5 +1,5 @@
 import React from "react";
-import './WebSiteName.css';
+import '../../../styles/WebSiteName.scss';
 
 const WebSiteName = () => {
     return (

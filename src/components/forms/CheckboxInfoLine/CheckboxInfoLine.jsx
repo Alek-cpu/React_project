@@ -1,5 +1,5 @@
 import React from "react";
-import "./CheckboxInfoLine.css";
+import '../../../styles/CheckboxInfoLine.scss';
 
 const CheckboxInfoLine = (props) => {
     return(

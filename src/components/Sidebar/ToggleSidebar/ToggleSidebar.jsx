@@ -1,5 +1,5 @@
 import React from "react";
-import './ToggleSidebar.css';
+import '../../../styles/ToggleSidebar.scss';
 
 const ToggleSidebar = () => {
     return (

@@ -1,6 +1,6 @@
 import React from "react";
-import userPhoto from "../../../assets/image 2.png";
-import './MiniInfo.css';
+import userPhoto from "../../../img/image 2.png";
+import '../../../styles/MiniInfo.scss';
 
 
 const MiniInfo = () => {

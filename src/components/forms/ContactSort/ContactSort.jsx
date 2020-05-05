@@ -1,5 +1,5 @@
 import React from "react";
-import './ContactSort.css';
+import '../../../styles/ContactSort.scss';
 
 const ContactSort = () => {
     return (

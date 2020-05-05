@@ -1,5 +1,5 @@
 import React from "react";
-import './DataFilter.css';
+import '../../../styles/DataFilter.scss';
 
 const DataFilter = () => {
     return (

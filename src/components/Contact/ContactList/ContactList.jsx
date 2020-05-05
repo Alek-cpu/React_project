@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import ContactDiv from "../ContactDiv/ContactDiv";
-import './ContactList.css';
-import InfoLine from "../InfoLine/InfoLine";
+import '../../../styles/ContactList.scss';
 
 const ContactList = (props) =>{
     return (

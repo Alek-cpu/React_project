@@ -1,6 +1,6 @@
 import React from "react";
-import './Stat.css';
 import ContactSortList from "../../forms/ContactSortList/ContactSortList";
+import '../../../styles/Stat.scss';
 
 const Stat = () => {
     return (

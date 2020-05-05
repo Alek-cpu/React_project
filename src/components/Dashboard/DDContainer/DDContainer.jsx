@@ -4,7 +4,7 @@ import CalendarWeek from "../CalendarWeek/CalendarWeek";
 import DragAndDrop from "../DragAndDrop/DragAndDrop";
 import testDrop from "../../../action/testDrop";
 import ShowMore from "../ShowMore/ShowMore";
-import './DDContainer.css';
+import '../../../styles/DDContainer.scss';
 
 const DDContainer= (props) => {
     return (

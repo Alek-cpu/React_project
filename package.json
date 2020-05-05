@@ -46,6 +46,8 @@
   },
   "devDependencies": {
     "dhx-suite": "^6.4.3",
-    "prop-types": "^15.7.2"
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "sass-loader": "^8.0.2"
   }
 }

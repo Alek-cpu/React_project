@@ -1,7 +1,9 @@
 import React, {Component} from "react";
 import Card from "../Card/Card";
-import './Cards.css';
+import userCardList from "../../../containers/userCardList";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import CardList from "../../../containers/userCardList";
+import '../../../styles/Cards.scss';
 
 const arrayCard = [
     {
@@ -30,14 +32,14 @@ const arrayCard = [
     }
 ]
 
-const getItems = count => arrayCard.map(el => ({
+const getItems = () => arrayCard.map(el => ({
     id: el.id,
     eventName: el.eventName,
     dueDate: el.dueDate,
     userName: el.userName,
     identicalStatus: el.identicalStatus,
     statusName: el.statusName
-}))
+}));
 
 
 const reorder = (list, startIndex, endIndex) => {
@@ -57,7 +59,6 @@ const getItemStyle = (isDragging, draggableStyle) => ({
 });
 
 const getListStyle = isDraggingOver => ({
-    // padding: grid,
     width: `${100}%`
 });
 

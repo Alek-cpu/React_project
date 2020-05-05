@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import HeaderInfoLine from "../HeaderInfoLine/HeaderInfoLine";
-import './ContactDiv.css';
+import '../../../styles/ContactDiv.scss';
 import {ContactList} from "../ContactList/ContactList";
 import UserContactList from "./../../../containers/userContactList";
 

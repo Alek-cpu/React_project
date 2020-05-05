@@ -1,6 +1,6 @@
 import React from "react";
 import Day from "../Day/Day";
-import './CalendarWeek.css';
+import '../../../styles/CalendarWeek.scss';
 
 const CalendarWeek = () => {
     return (

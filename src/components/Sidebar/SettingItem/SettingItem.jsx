@@ -1,5 +1,5 @@
 import React from "react";
-import './SettingItem.css';
+import '../../../styles/SettingItem.scss';
 
 const SettingItem = () => {
     return (

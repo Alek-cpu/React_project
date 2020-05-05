@@ -1,7 +1,7 @@
 import React from "react";
-import MiniInfo from '../MiniInfo/MiniInfo';
+import MiniInfo from "../MiniInfo/MiniInfo";
 import Navigation from "../NavigationItem/NavigationItem";
-import './UserSidebar.css';
+import '../../../styles/UserSidebar.scss';
 
 
 const UserNav = () => {

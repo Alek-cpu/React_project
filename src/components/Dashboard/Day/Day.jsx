@@ -1,5 +1,5 @@
 import React from "react";
-import './Day.css';
+import '../../../styles/Day.scss';
 
 const Day = (props) => {
     return (

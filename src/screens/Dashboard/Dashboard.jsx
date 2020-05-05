@@ -12,7 +12,7 @@ import DragAndDrop from "../../components/Dashboard/DragAndDrop/DragAndDrop";
 import Cards from "../../components/Dashboard/Cards/Cards";
 import Card from "../../components/Dashboard/Card/Card";
 import ShowMore from "../../components/Dashboard/ShowMore/ShowMore";
-import './Dashboard.css';
+import '../../styles/Dashboard.scss';
 
 const Dashboard = (props) => {
     return (

@@ -1,6 +1,6 @@
 import React from "react";
-import userAvatar from "./../../../assets/image4 4.png"
-import './Card.css';
+import userAvatar from '../../../img/image4 4.png';
+import '../../../styles/Card.scss';
 
 const Card = (props) => {
     return (

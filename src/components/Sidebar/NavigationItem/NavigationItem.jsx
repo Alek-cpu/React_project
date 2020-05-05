@@ -6,7 +6,7 @@ import ContactItem from "../Item/ContactItem";
 import ChatItem from "../Item/ChatItem";
 import DealsItem from "../Item/DealsItem";
 import {NavLink} from "react-router-dom";
-import './NavigationItem.css';
+import '../../../styles/NavigationItem.scss';
 
 const Navigation = () => {
     return (

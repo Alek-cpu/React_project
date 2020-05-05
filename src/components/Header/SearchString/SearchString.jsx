@@ -1,7 +1,7 @@
 import React from "react";
 import NotificationBtn from "../../forms/Notification/Notification";
 import SearchStringForm from "../../forms/InputSearchString/InputSearchString";
-import './SearchString.css';
+import '../../../styles/SearchString.scss';
 
 const SearchString = () => {
     return (

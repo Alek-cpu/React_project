@@ -1,8 +1,8 @@
 import React from "react";
 import Dashboard from "../../screens/Dashboard/Dashboard";
 import Contact from "../../screens/Contact/Contact";
-import './container.css';
 import Route from "react-router-dom/es/Route";
+import '../../styles/container.scss';
 
 const ContainerDiv = (props) => {
 
