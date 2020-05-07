@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import CbxHeaderInfoLine from "../../forms/CbxHeaderInfoLine/CbxHeaderInfoLine";
 import '../../../styles/HeaderInfoLine.scss';
 

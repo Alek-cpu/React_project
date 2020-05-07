@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import userAvatar from '../../../img/image4 4.png';
 import '../../../styles/Card.scss';
 

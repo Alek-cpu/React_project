@@ -1,15 +1,20 @@
-import React, {Component} from "react";
+import React, {Component} from 'react';
 import ContactDiv from "../ContactDiv/ContactDiv";
 import '../../../styles/ContactList.scss';
 
-const ContactList = (props) =>{
-    return (
-        <div className="contact-inner">
-            <div className="wrapperTable">
-                <ContactDiv />
+class ContactList extends Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (
+            <div className="contact-inner">
+                <div className="wrapperTable">
+                    <ContactDiv />
+                </div>
             </div>
-        </div>
-    );
+        );
+    }
 }
 
 export default ContactList;

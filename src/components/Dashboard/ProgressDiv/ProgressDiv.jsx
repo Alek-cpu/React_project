@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Stat from "../Stat/Stat";
 import ReactCalendar from "../Calendar/Calendar";
 import '../../../styles/ProgressDiv.scss';

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import NotificationBtn from "../../forms/Notification/Notification";
 import SearchStringForm from "../../forms/InputSearchString/InputSearchString";
 import '../../../styles/SearchString.scss';

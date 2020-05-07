@@ -1,7 +1,7 @@
-import React, {Component} from "react";
+import React, {Component} from 'react';
 import Card from "../Card/Card";
 import userCardList from "../../../containers/userCardList";
-import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import CardList from "../../../containers/userCardList";
 import '../../../styles/Cards.scss';
 

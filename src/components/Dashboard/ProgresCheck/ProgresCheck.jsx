@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Task from "../Task/Task";
 import ProgresLine from "../ProgresLine/ProgresLine";
 import '../../../styles/ProgresCheck.scss';

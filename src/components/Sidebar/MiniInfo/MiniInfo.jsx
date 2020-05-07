@@ -1,5 +1,5 @@
-import React from "react";
-import userPhoto from "../../../img/image 2.png";
+import React from 'react';
+import userPhoto from '../../../img/image 2.png';
 import '../../../styles/MiniInfo.scss';
 
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import MiniInfo from "../MiniInfo/MiniInfo";
 import Navigation from "../NavigationItem/NavigationItem";
 import '../../../styles/UserSidebar.scss';

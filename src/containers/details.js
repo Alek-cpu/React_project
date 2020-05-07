@@ -15,7 +15,7 @@ class Details extends Component {
                   <td className="profile__name" id={this.props.inf.id}>
                       <div className="list-header-photo">
                           <img className="mini__photo" src={userAvatar} alt=""/></div>
-                      <div className="list-header__name">{this.props.inf.userName}</div>
+                          <div className="list-header__name">{this.props.inf.userName}</div>
                   </td>
                   <td>{this.props.inf.email}</td>
                   <td>{this.props.inf.companyName}</td>

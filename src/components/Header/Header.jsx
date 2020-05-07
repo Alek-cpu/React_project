@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import WebSiteName from "./WebsiteName/WebSiteName";
 import SearchString from "./SearchString/SearchString";
 import NotificationBtn from "../forms/Notification/Notification";

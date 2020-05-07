@@ -8,6 +8,9 @@ import "../styles/CheckboxInfoLine.scss";
 import {addContact} from './../action/index';
 
 class ContactList extends Component {
+    constructor(props) {
+        super(props);
+    }
 
     showItem() {
         return this.props.infLine.map((inf) => {
@@ -15,7 +18,8 @@ class ContactList extends Component {
                 <tr className="info-line">
                     <td>
                         <form className="row-space-cbx">
-                            <input onChange={() => this.props.addContact (inf)} type="checkbox" className="form__cbx chield" id={inf.id} /><label
+                            <input onChange={() => this.props.addContact(inf)} type="checkbox"
+                                   className="form__cbx chield" id={inf.id}/><label
                             htmlFor={inf.id}></label>
                         </form>
                     </td>
@@ -33,6 +37,7 @@ class ContactList extends Component {
             );
         });
     }
+
     render() {
         return (
             this.showItem()
@@ -40,13 +45,13 @@ class ContactList extends Component {
     }
 }
 
-function mapStateToProps (state) {
+function mapStateToProps(state) {
     return {
         infLine: state.infLine
     }
 }
 
-function matchDispatchToProps (dispatch) {
+function matchDispatchToProps(dispatch) {
     return bindActionCreators({addContact: addContact}, dispatch)
 }
 

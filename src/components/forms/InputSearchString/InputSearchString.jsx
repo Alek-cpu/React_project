@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import '../../../styles/InputSearchString.scss';
 
 class SearchStringForm extends React.Component {

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import ProgressDiv from "../../components/Dashboard/ProgressDiv/ProgressDiv";
 import DDContainer from "../../components/Dashboard/DDContainer/DDContainer";
 import ProgresCheck from "../../components/Dashboard/ProgresCheck/ProgresCheck";

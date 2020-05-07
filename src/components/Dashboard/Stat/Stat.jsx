@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import ContactSortList from "../../forms/ContactSortList/ContactSortList";
 import '../../../styles/Stat.scss';
 
