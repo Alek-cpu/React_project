@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./components/Header/Header";
-import Sidebar from "./components/Sidebar/Sidebar";
-import ContainerDiv from "./components/Container/Container";
+import Header from "./components/header/Header";
+import Sidebar from "./components/sidebar/Sidebar";
+import ContainerDiv from "./components/container-wrapper/Container";
 import {BrowserRouter} from "react-router-dom";
 
 function App(props) {

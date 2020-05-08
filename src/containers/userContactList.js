@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import CheckboxInfoLine from "../components/forms/CheckboxInfoLine/CheckboxInfoLine";
+import CheckboxInfoLine from "../components/forms/checkbox-infoline/CheckboxInfoLine";
 import userAvatar from "../img/image 2 (1).png";
-import toDo from "../action/toDo";
-import "../styles/CheckboxInfoLine.scss";
+import "../styles/_checkbox-infoline.scss";
 import {addContact} from './../action/index';
 
 class ContactList extends Component {

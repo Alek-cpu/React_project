@@ -1,0 +1,39 @@
+@import 'utils/_fonts.scss'; @import 'calendar'; @import 'calendar-week'; @import 'card';
+@import 'cards'; @import 'cbxheader-infoline'; @import 'checkbox-infoline'; @import 'contact';
+@import 'contact-add'; @import 'contact-command'; @import 'contact-div';
+@import 'contact-sortlist'; @import 'contactlist'; @import 'contactsort';
+@import 'container'; @import 'dashboard'; @import 'datafilter';
+@import 'day'; @import 'ddcontainer'; @import 'header';
+@import 'header-infoline'; @import 'input-searchstring'; @import 'item';
+@import 'mini-info'; @import 'navigation-item';
+@import 'notification'; @import 'progrescheck'; @import 'progresline';
+@import 'progress-div'; @import 'searchstring'; @import 'setting-item';
+@import 'show-more'; @import 'sidebar'; @import 'stat'; @import 'task';
+@import 'toggle-sidebar'; @import 'user-sidebar'; @import 'website-name';
+
+body {
+  margin: 0;
+  background-color: #F5F6F8;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Poppins-Medium', 'Roboto', 'Open Sans', 'Poppins-Regular',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  color: #000 !important;
+  text-decoration: none; }
