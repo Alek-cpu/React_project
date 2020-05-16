@@ -1,1 +1,1 @@
-export const ADD_CONTACT = 'ADD_CONTACT';
+export const ADD_NEW_CONTACT = 'ADD_NEW_CONTACT';

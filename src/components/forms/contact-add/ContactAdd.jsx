@@ -11,7 +11,7 @@ class ContactAdd extends Component {
     render() {
         return (
             <Fragment>
-                <button onClick={this.props.onClick} className="add__contact">
+                <button className="add__contact">
                     Add contact
                 </button>
             </Fragment>
@@ -20,3 +20,4 @@ class ContactAdd extends Component {
 }
 
 export default ContactAdd;
+

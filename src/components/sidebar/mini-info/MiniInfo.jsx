@@ -7,7 +7,7 @@ const MiniInfo = () => {
         <div className="profile">
             <div className="profile-info">
                 <div className="profile_photo">
-                    <img className="profile-photo__mini" src={userPhoto}/>
+                    <img className="profile-photo__mini" src={userPhoto} />
                 </div>
                 <div className="profile-block">
                     <div className="profile__name profileTxtElem">Sierra Ferguson</div>
