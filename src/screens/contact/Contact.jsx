@@ -15,7 +15,7 @@ class Contact extends Component{
                 <tr className="info-line">
                     <td>
                         <form className="row-space-cbx">
-                            <input onChange={() => this.props.addContact(inf)} type="checkbox"
+                            <input type="checkbox"
                                    className="form__cbx chield" id={inf.id}/><label
                             htmlFor={inf.id}></label>
                         </form>

@@ -19,7 +19,7 @@ const arrayCard = [
         dueDate: "December 22, 2019",
         userName: "Rebecca Moore",
         identicalStatus: "Call",
-        statusName: "Ended"
+        statusName: "Completed"
     },
     {
         id: `r2d4`,
