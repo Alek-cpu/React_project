@@ -59,6 +59,9 @@ td {
 @media screen and (max-width: 974px) {
     .header-text {
         display: none; }
+    td {
+        border-top: none;
+    }
 }
 
 @media screen and (max-width: 756px) {

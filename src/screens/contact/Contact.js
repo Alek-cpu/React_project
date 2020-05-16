@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import ContactCommand from "../../components/contact/contact-command/ContactCommand";
 import ContactSort from "../../components/forms/contact-sort/ContactSort";
-import '../../styles/_contact.scss';
 import CbxHeaderInfoLine from "../../components/forms/cbxheader-infoline/CbxHeaderInfoLine";
 import {bindActionCreators} from "redux";
 import {addContact} from "../../action";

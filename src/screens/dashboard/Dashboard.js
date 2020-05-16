@@ -12,7 +12,6 @@ import DragAndDrop from "../../components/dashboard/dnd/DragAndDrop";
 import Cards from "../../components/dashboard/cards/Cards";
 import Card from "../../components/dashboard/card/Card";
 import ShowMore from "../../components/dashboard/show-more/ShowMore";
-import '../../styles/_dashboard.scss';
 
 const Dashboard = (props) => {
     return (
