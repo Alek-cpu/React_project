@@ -4,7 +4,7 @@ import CardReducer from "./card";
 
 const allReducers = combineReducers ({
    infLine: ContactReducers,
-   card: CardReducer
+   card: CardReducer,
 });
 
 export default allReducers;
