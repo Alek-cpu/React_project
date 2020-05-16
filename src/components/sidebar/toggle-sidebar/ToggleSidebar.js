@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 function ToggleSidebar() {
     return (
-        <div className="toggle-wrap setItem" onClick={() => alert('sayHi')}>
+        <div className="toggle-wrap setItem">
             <div className="toggle mnu-item">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path className="fil__svg" fill-rule="evenodd" clip-rule="evenodd"
