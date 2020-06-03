@@ -1,34 +1,34 @@
 import React, {Component} from 'react';
 import ContactCommand from "../../components/contact/contact-command/ContactCommand";
-import ContactSort from "../../components/forms/contact-sort/ContactSort";
 import CbxHeaderInfoLine from "../../components/forms/cbxheader-infoline/CbxHeaderInfoLine";
 import {bindActionCreators} from "redux";
 import {addContact} from "../../action";
 import {connect} from "react-redux";
 import userAvatar from "../../img/image 2 (1).png";
+import ContactSort from "../../components/forms/contact-sort/ContactSort";
 
 class Contact extends Component {
     showItem() {
         return this.props.infLine.map((inf) => {
             return (
-                <tr className="info-line">
+                <tr className="infoLine">
                     <td>
                         <form className="row-space-cbx">
                             <input type="checkbox"
-                                   className="form__cbx chield" id={inf.id}/><label
+                                   className="formCbx chield" id={inf.id}/><label
                             htmlFor={inf.id}></label>
                         </form>
                     </td>
-                    <td className="profile__name" id={inf.id}>
-                        <div className="list-header-photo">
-                            <img className="mini__photo" src={userAvatar} alt=""/></div>
-                        <div className="list-header__name">{inf.userName}</div>
+                    <td className="profileName" id={inf.id}>
+                        <div className="listHeaderPhoto">
+                            <img className="miniPhoto" src={userAvatar} alt=""/></div>
+                        <div className="listHeaderName">{inf.userName}</div>
                     </td>
                     <td>{inf.email}</td>
                     <td>{inf.companyName}</td>
                     <td>{inf.role}</td>
                     <td>{inf.forecast}</td>
-                    <td className="last__td">{inf.date}</td>
+                    <td className="lastTd">{inf.date}</td>
                 </tr>
             );
         });
@@ -37,46 +37,36 @@ class Contact extends Component {
     render() {
         return (
             <div className="contact">
-                <div className="contact-command">
-                    <div className="contact-sort">
-                        Company:
-                        <form>
-                            <select className="contact-sort__list" size="1">
-                                <option>All</option>
-                                <option>NeAll</option>
-                                <option>NeAll</option>
-                                <option>NeAll</option>
-                                <option>NeAll</option>
-                            </select>
-                        </form>
-                    </div>
-                    <button onClick={() => this.props.addContact()} className="add__contact">
+                <div className="contactCommand">
+                    <ContactSort />
+                    <button onClick={() => this.props.addContact()} className="addContact">
                         Add contact
                     </button>
                 </div>
-                <div className="contact-inner">
+                {/*Maps*/}
+                <div className="contactInner">
                     <div className="wrapperTable">
-                        <table className="contact-list">
-                            <tr className="header-line">
-                                <th className="row-space">
+                        <table className="contactList">
+                            <tr className="headerLine">
+                                <th className="rowSpace">
                                     <CbxHeaderInfoLine />
                                 </th>
-                                <th className="row-1 header-text hideElement">
-                                    <div className="list-header__name">Name</div>
+                                <th className="row1 headerText hideElement">
+                                    <div className="listHeaderName">Name</div>
                                 </th>
-                                <th className="row-1 header-text hideElement">
-                                    <div className="list-header__email">Email</div>
+                                <th className="row1 headerText hideElement">
+                                    <div className="listHeaderEmail">Email</div>
                                 </th>
-                                <th className="row-1 header-text hideElement">
-                                    <div className="list-header__compname">Company name</div>
+                                <th className="row1 headerText hideElement">
+                                    <div className="listHeaderCompname">Company name</div>
                                 </th>
-                                <th className="row-1 header-text hideElement">
-                                    <div className="list-header__role">Role</div>
+                                <th className="row1 headerText hideElement">
+                                    <div className="listHeaderRole">Role</div>
                                 </th>
-                                <th className="row-1 header-text hideElement">
-                                    <div className="list-header__forecast">Forecast</div>
+                                <th className="row1 headerText hideElement">
+                                    <div className="listHeaderForecast">Forecast</div>
                                 </th>
-                                <th className="header-text last__td hideElement">Recent activity</th>
+                                <th className="headerText lastTd hideElement">Recent activity</th>
                             </tr>
                             {this.showItem()}
                         </table>

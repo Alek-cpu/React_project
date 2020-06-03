@@ -6,7 +6,7 @@
     margin-top: 24px;
     width: 100%; }
 
-.diagram-header {
+.diagramHeader {
     font-family: 'Poppins-Regular';
     font-style: normal;
     font-size: 15px;
@@ -18,7 +18,7 @@
     color: #192A3E;
     border-bottom: 1px solid #EBEFF2; }
 
-.progress-compl-task {
+.progressComplTask {
     font-weight: 500;
     font-size: 15px;
     line-height: 22px;
@@ -41,7 +41,7 @@
     letter-spacing: 0.01em;
     color: #6A707E; }
 
-.contact-sort {
+.contactSort {
     display: flex;
     font-weight: normal;
     font-size: 12px;
@@ -50,13 +50,13 @@
     color: #6A707E;
     cursor: pointer; }
 
-.diagram-info {
+.diagramInfo {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 33px 0; }
 
-.diagram-circle {
+.diagramCircle {
     background: #FFFFFF;
     width: 224px;
     height: 224px;
@@ -74,14 +74,14 @@
     align-items: center;
     justify-content: center; }
 
-.diagram-circle__proc {
+.diagramCircleProc {
     font-size: 0.6em; }
 
-.point-wrapper {
+.pointWrapper {
     display: flex;
     flex-direction: column; }
 
-.info-point {
+.infoPoint {
     display: flex;
     padding-bottom: 12px;
     font-style: normal;
@@ -90,7 +90,7 @@
     line-height: 15px;
     letter-spacing: 0.01em;
     color: #192A3E; }
-.info-point .info-point__name {
+.infoPoint .infoPointName {
     padding-left: 8px; }
 
 @media screen and (max-width: 1085px) {
@@ -105,14 +105,14 @@
 }
 
 @media screen and (max-width: 480px) {
-    .calendar, .stat, .dd-wrap {
+    .calendar, .stat, .ddWrap {
         margin-top: 24px; }
     .stat {
         width: 100%;
         box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06); }
-    .diagram-header {
+    .diagramHeader {
         border: none; }
-    .contact-sort {
+    .contactSort {
         display: flex;
         font-weight: normal;
         font-size: 0.750em;

@@ -1,8 +1,8 @@
-.calendar-week {
+.calendarWeek {
     padding: 0 24px;
     border-bottom: 1px solid #EBEFF2; }
 
-.days-week {
+.daysWeek {
     padding-top: 46px;
     display: flex;
     justify-content: space-between;
@@ -17,6 +17,6 @@
 
 
 @media screen and (max-width: 480px) {
-    .calendar-wrapper {
+    .calendarWrapper {
         border-bottom: 1px solid #EBEFF2; }
 }

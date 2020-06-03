@@ -1,4 +1,4 @@
-.toggle-wrap {
+.toggleWrap {
     padding-left: 24px;
     position: relative;
     bottom: 2%; }
@@ -8,45 +8,45 @@
     line-height: 16px;
     letter-spacing: 0.01em;
     color: #90A0B7; }
-.toggle:hover .fil__svg {
+.toggle:hover .filSvg {
     fill: #109CF1; }
 
-.mnu-item {
+.mnuItem {
     display: flex;
     padding-top: 20px;
     cursor: pointer; }
 
-.mnu-item__name {
+.mnuItemName {
     padding-left: 16.5px; }
 
-.mnu-item:hover, .mnu-item .mnu-item__name:hover {
+.mnuItem:hover, .mnuItem .mnuItemName:hover {
     color: #109CF1; }
 
 @media screen and (max-width: 1085px) {
-    .toggle-wrap {
+    .toggleWrap {
         display: flex; }
-    .mnu-item {
+    .mnuItem {
         justify-content: center; }
-    .mnu-item__name {
+    .mnuItemName {
         display: none; }
 }
 
 @media screen and (max-width: 480px) {
-    .toggle-wrap {
+    .toggleWrap {
         padding-left: 0px;
         position: relative;
         bottom: 0; }
-    .mnu-item {
+    .mnuItem {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         cursor: pointer;
         padding: 0; }
-    .mnu-item__name {
+    .mnuItemName {
         display: none; }
 }
 @media screen and (max-width: 756px) {
-    .mnu-item__name {
+    .mnuItemName {
         display: none; }
 }

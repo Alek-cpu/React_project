@@ -1,31 +1,31 @@
-.mnu-item {
+.mnuItem {
     display: flex;
     padding-top: 20px;
     cursor: pointer; }
 
-.mnu-item:hover .mnu-item__svg {
+.mnuItem:hover .mnuItemSvg {
     stroke: #109CF1; }
 
-.mnu-item__name {
+.mnuItemName {
     padding-left: 16.5px; }
 
-.mnu-item:hover, .mnu-item .mnu-item__name:hover {
+.mnuItem:hover, .mnuItem .mnuItemName:hover {
     color: #109CF1; }
 
 @media screen and (max-width: 1085px) {
-    .mnu-item {
+    .mnuItem {
         justify-content: center; }
-    .mnu-item__name {
+    .mnuItemName {
         display: none; }
 }
 @media screen and (max-width: 480px) {
-    .mnu-item {
+    .mnuItem {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         cursor: pointer;
         padding: 0;}
-    .mnu-item__name {
+    .mnuItemName {
         display: none; }
 }

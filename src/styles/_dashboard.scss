@@ -1,9 +1,9 @@
-.base-wrapper {
+.baseWrapper {
     padding: 20px;
     display: flex; }
 
 @media screen and (max-width: 1085px) {
-    .base-wrapper {
+    .baseWrapper {
         margin: 24px;
         padding: 0;
         display: flex;
@@ -11,6 +11,6 @@
 }
 
 @media screen and (max-width: 480px) {
-    .base-wrapper {
+    .baseWrapper {
         margin: 0; }
 }

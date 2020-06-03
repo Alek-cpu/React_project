@@ -1,11 +1,11 @@
-.header-line {
+.headerLine {
     font-weight: 500;
     font-size: 13px;
     line-height: 19px;
     letter-spacing: 0.01em;
     color: #334D6E; }
 
-.row-space {
+.rowSpace {
     display: flex;
     align-items: center; }
 
@@ -46,18 +46,18 @@ td {
     height: 64px;
     cursor: pointer; }
 
-.last__td {
+.lastTd {
     padding-right: 24px;
     text-align: right; }
 
-.row-1 {
+.row1 {
     text-align: left; }
 
-.header-text {
+.headerText {
     opacity: 0.5; }
 
 @media screen and (max-width: 974px) {
-    .header-text {
+    .headerText {
         display: none; }
     td {
         border-top: none;
@@ -65,7 +65,7 @@ td {
 }
 
 @media screen and (max-width: 756px) {
-    .header-line {
+    .headerLine {
         font-weight: 500;
         font-size: 0.813em;
         line-height: 1.188em;
@@ -74,10 +74,10 @@ td {
 }
 
 @media screen and (max-width: 480px) {
-    .row-space {
+    .rowSpace {
         display: flex;
         align-items: center; }
-    .last__td {
+    .lastTd {
         padding-right: 24px;
         text-align: right; }
 }

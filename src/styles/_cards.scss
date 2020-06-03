@@ -1,4 +1,4 @@
-.drag-drop-wrapper {
+.dragDropWrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -6,7 +6,7 @@
 }
 
 @media screen and (max-width: 1085px) {
-    .drag-drop-wrapper {
+    .dragDropWrapper {
         padding: 0;
     }
 }

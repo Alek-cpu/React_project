@@ -1,15 +1,15 @@
-.wrap__progress-line {
+.wrapProgressLine {
     padding-top: 16px;
     padding-bottom: 20px;
     width: 100%; }
 
-.progress-line {
+.progressLine {
     position: relative;
     width: 100%;
     height: 4px;
     background: #EBEFF2;
     border-radius: 3px; }
-.progress-line::after {
+.progressLine::after {
     content: '';
     position: absolute;
     height: 4px;

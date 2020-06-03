@@ -1,4 +1,4 @@
-.profile-container {
+.profileContainer {
     border-bottom: 1px solid #EBEFF2;
     padding: 0 24px 24px 24px; }
 
@@ -9,7 +9,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .profile-container {
+    .profileContainer {
         display: flex;
         flex-direction: row;
         align-items: center;
