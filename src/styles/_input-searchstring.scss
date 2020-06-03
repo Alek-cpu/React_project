@@ -1,12 +1,12 @@
-.header .search-container .search-string {
+.header .searchContainer .searchString {
     display: flex;
     align-items: center;
     width: 100%; }
 
-.mnu-item:hover .mnu-item__svg {
+.mnu-item:hover .mnu-itemSvg {
     stroke: #109CF1; }
 
-.header .search-container .searching {
+.header .searchContainer .searching {
     font-family: 'Poppins-Regular';
     font-style: normal;
     font-weight: normal;
@@ -16,6 +16,6 @@
     color: #90A0B7; }
 
 @media screen and (max-width: 480px) {
-    .header .search-string{
+    .header .searchString{
         margin: 0; }
 }

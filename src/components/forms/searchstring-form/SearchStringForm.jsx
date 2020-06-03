@@ -29,7 +29,7 @@ class SearchStringForm extends React.Component {
                               fill="#C2CFE0"/>
                     </svg>
                 </button>
-                <input className="searching" type="text" placeholder="Global search"/>
+                <input className="searchString" type="text" placeholder="Global search"/>
             </form>
         );
     }
