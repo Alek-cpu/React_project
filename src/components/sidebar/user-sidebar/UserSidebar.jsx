@@ -1,6 +1,6 @@
 import React from 'react';
-import Navigation from "../navigation-item/NavigationItem";
-import userPhoto from "../../../img/image 2.png";
+import Navigation from '../navigation-item/NavigationItem';
+import userPhoto from '../../../img/image 2.png';
 
 
 export default function UserNav() {

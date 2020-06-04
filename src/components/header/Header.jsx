@@ -1,7 +1,6 @@
 import React from 'react';
-import SearchString from "./search-string/SearchString";
-import NotificationBtn from "../forms/notification/Notification";
-import SearchStringForm from "../forms/searchstring-form/SearchStringForm";
+import NotificationBtn from '../forms/notification/Notification';
+import SearchStringForm from '../forms/searchstring-form/SearchStringForm';
 
 export default function Header() {
     return (
@@ -12,8 +11,8 @@ export default function Header() {
                 </div>
             </div>
             <div className="searchContainer">
-                <SearchStringForm />
-                <NotificationBtn />
+                <SearchStringForm/>
+                <NotificationBtn/>
             </div>
         </header>
     );

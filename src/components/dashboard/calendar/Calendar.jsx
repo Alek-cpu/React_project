@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import {render} from 'react-dom';
 import Calendar from 'react-calendar';
+import {render} from 'react-dom';
 
 export default function ReactCalendar() {
     const [date, setDate] = useState(new Date());

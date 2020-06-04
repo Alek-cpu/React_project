@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactSortList from "../../forms/contact-sortlist/ContactSortList";
+import ContactSortList from '../../forms/contact-sortlist/ContactSortList';
 
 export default function ProgresCompl() {
     return (

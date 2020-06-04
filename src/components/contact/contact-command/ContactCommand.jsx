@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
+import ContactSort from '../../forms/contact-sort/ContactSort';
+import ContactAdd from '../../forms/contact-add/ContactAdd';
 import {render} from 'react-dom';
-import ContactSort from "../../forms/contact-sort/ContactSort";
-import ContactAdd from "../../forms/contact-add/ContactAdd";
 
 export default class ContactCommand extends Component {
     constructor(props) {
@@ -9,10 +9,11 @@ export default class ContactCommand extends Component {
     }
 
     render() {
+        let {onClick} = this.props;
         return (
             <div className="contactCommand">
-                <ContactSort />
-                <ContactAdd onClick={this.props.onClick} />
+                <ContactSort/>
+                <ContactAdd onClick={onClick}/>
             </div>
         );
     }

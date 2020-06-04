@@ -1,12 +1,9 @@
 import React from 'react';
-import ProgresCheck from "../../components/dashboard/progres-check/ProgresCheck";
-import DataFilter from "../../components/forms/datafilter/DataFilter";
-import CalendarWeek from "../../components/dashboard/calendar-week/CalendarWeek";
-import Day from "../../components/dashboard/day/Day";
-import Cards from "../../components/dashboard/cards/Cards";
-import Card from "../../components/dashboard/card/Card";
-import ReactCalendar from "../../components/dashboard/calendar/Calendar";
-import ProgresCompl from "../../components/dashboard/stat/ProgresCompl";
+import ProgresCheck from '../../components/dashboard/progres-check/ProgresCheck';
+import CalendarWeek from '../../components/dashboard/calendar-week/CalendarWeek';
+import Cards from '../../components/dashboard/cards/Cards';
+import ReactCalendar from '../../components/dashboard/calendar/Calendar';
+import ProgresCompl from '../../components/dashboard/stat/ProgresCompl';
 
 const Dashboard = (props) => {
     return (

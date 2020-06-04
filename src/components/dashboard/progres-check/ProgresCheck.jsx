@@ -1,5 +1,5 @@
 import React from 'react';
-import DataFilter from "../../forms/datafilter/DataFilter";
+import DataFilter from '../../forms/datafilter/DataFilter';
 
 export default function ProgresCheck() {
     return (

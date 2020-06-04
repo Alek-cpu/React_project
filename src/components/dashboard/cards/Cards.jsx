@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Card from "../card/Card";
-import userCardList from "../../../containers/userCardList";
+import Card from '../card/Card';
+import userCardList from '../../../containers/userCardList';
 import {DragDropContext, Droppable, Draggable} from 'react-beautiful-dnd';
-import CardList from "../../../containers/userCardList";
+import CardList from '../../../containers/userCardList';
 
 const arrayCard = [
     {

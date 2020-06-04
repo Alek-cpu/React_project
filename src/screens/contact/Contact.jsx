@@ -1,15 +1,18 @@
 import React, {Component} from 'react';
-import ContactCommand from "../../components/contact/contact-command/ContactCommand";
-import CbxHeaderInfoLine from "../../components/forms/cbxheader-infoline/CbxHeaderInfoLine";
-import {bindActionCreators} from "redux";
-import {addContact} from "../../action";
-import {connect} from "react-redux";
-import userAvatar from "../../img/image 2 (1).png";
-import ContactSort from "../../components/forms/contact-sort/ContactSort";
+import ContactCommand from '../../components/contact/contact-command/ContactCommand';
+import CbxHeaderInfoLine from '../../components/forms/cbxheader-infoline/CbxHeaderInfoLine';
+import ContactSort from '../../components/forms/contact-sort/ContactSort';
+import ContactAdd from "../../components/forms/contact-add/ContactAdd";
+import {bindActionCreators} from 'redux';
+import {addContact} from '../../action';
+import {connect} from 'react-redux';
+import userAvatar from '../../img/image 2 (1).png';
 
 class Contact extends Component {
+
     showItem() {
-        return this.props.infLine.map((inf) => {
+        let {infLine} = this.props;
+        return infLine.map((inf) => {
             return (
                 <tr className="infoLine">
                     <td>
@@ -35,15 +38,15 @@ class Contact extends Component {
     }
 
     render() {
+
+        let {addContact} = this.props;
+
         return (
             <div className="contact">
                 <div className="contactCommand">
                     <ContactSort />
-                    <button onClick={() => this.props.addContact()} className="addContact">
-                        Add contact
-                    </button>
+                    <ContactAdd click={() => addContact()} />
                 </div>
-                {/*Maps*/}
                 <div className="contactInner">
                     <div className="wrapperTable">
                         <table className="contactList">
