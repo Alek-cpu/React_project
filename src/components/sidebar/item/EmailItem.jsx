@@ -1,6 +1,6 @@
 import React from 'react';
 
-function EmailItem() {
+export default function EmailItem() {
     return (
         <a href="#">
             <div className="mnuItem">
@@ -17,5 +17,3 @@ function EmailItem() {
         </a>
     );
 }
-
-export default EmailItem;

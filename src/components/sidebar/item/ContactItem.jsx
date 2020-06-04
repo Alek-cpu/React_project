@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ContactItem() {
+export default function ContactItem() {
     return (
         <div className="mnuItem">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -13,5 +13,3 @@ function ContactItem() {
         </div>
     );
 }
-
-export default ContactItem;

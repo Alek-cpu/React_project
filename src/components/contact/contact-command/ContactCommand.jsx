@@ -3,7 +3,7 @@ import {render} from 'react-dom';
 import ContactSort from "../../forms/contact-sort/ContactSort";
 import ContactAdd from "../../forms/contact-add/ContactAdd";
 
-class ContactCommand extends Component {
+export default class ContactCommand extends Component {
     constructor(props) {
         super(props);
     }
@@ -17,5 +17,3 @@ class ContactCommand extends Component {
         );
     }
 }
-
-export default ContactCommand;

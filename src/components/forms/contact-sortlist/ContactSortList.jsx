@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ContactSortList() {
+export default function ContactSortList() {
     return (
         <form>
             <select className="contactSortList" size="1">
@@ -13,5 +13,3 @@ function ContactSortList() {
         </form>
     );
 }
-
-export default ContactSortList;

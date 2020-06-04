@@ -6,11 +6,11 @@
     z-index: -1;
     opacity: 0; }
 
-.form__cbx + label {
+.formCbx + label {
     position: relative;
     cursor: pointer; }
 
-.form__cbx + label:before {
+.formCbx + label:before {
     content: "";
     position: absolute;
     top: -8px;
@@ -22,7 +22,7 @@
     border-radius: 4px;
     transition: 0.2s; }
 
-.form__cbx + label:after {
+.formCbx + label:after {
     content: "";
     position: absolute;
     top: -4px;
@@ -33,11 +33,11 @@
     border-bottom: 2px solid #FFFFFF;
     transform: rotate(-45deg); }
 
-.form__cbx:checked + label:before {
+.formCbx:checked + label:before {
     background: #109CF1;
     border: #109CF1; }
 
-.form__cbx:checked + label:after {
+.formCbx:checked + label:after {
     border-left: 2px solid #FFFFFF;
     border-bottom: 2px solid #FFFFFF;
     transform: rotate(-45deg); }

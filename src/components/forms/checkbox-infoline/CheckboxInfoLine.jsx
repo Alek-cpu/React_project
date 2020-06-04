@@ -1,10 +1,10 @@
 import React from 'react';
 
-const CheckboxInfoLine = (props) => {
+const CheckboxInfoLine = ({id}) => {
     return (
         <form className="rowSpaceCbx">
-            <input type="checkbox" className="formCbx chield" id={props.id} /><label
-            htmlFor={props.id}></label>
+            <input type="checkbox" className="formCbx chield" id={id} /><label
+            htmlFor={id}></label>
         </form>
     );
 }

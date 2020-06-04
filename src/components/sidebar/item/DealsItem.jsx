@@ -1,6 +1,6 @@
 import React from 'react';
 
-function DealsItem() {
+export default function DealsItem() {
     return (
         <a href="#">
             <div className="mnuItem">
@@ -19,5 +19,3 @@ function DealsItem() {
         </a>
     );
 }
-
-export default DealsItem;

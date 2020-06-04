@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SettingItem() {
+export default function SettingItem() {
     return (
         <div className="settingWrap setItem">
             <div className="setting mnuItem">
@@ -14,5 +14,3 @@ function SettingItem() {
         </div>
     );
 }
-
-export default SettingItem;

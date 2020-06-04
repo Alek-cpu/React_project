@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactSortList from "../../forms/contact-sortlist/ContactSortList";
 
-function ProgresCompl() {
+export default function ProgresCompl() {
     return (
         <div className="stat">
             <div className="statWrap">
@@ -56,5 +56,3 @@ function ProgresCompl() {
         </div>
     );
 }
-
-export default ProgresCompl;

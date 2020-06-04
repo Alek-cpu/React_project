@@ -1,7 +1,7 @@
 import React from 'react';
 import DataFilter from "../../forms/datafilter/DataFilter";
 
-function ProgresCheck() {
+export default function ProgresCheck() {
     return (
         <div className="progressCheck">
             <div className="task">
@@ -14,5 +14,3 @@ function ProgresCheck() {
         </div>
     );
 }
-
-export default ProgresCheck;

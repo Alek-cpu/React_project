@@ -12,16 +12,16 @@
 
 
 
-.header .search-container input, .header .search-container button {
+.header .searchContainer input, .header .searchContainer button {
     border: none;
     outline: none;
     background: transparent;
     display: flex;
     align-items: center; }
-.header .search-container input {
+.header .searchContainer input {
     width: 80%;
     height: 60px; }
-.header .search-container button {
+.header .searchContainer button {
     cursor: pointer;
     padding-right: 15px; }
 

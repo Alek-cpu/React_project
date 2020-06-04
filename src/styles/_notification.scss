@@ -1,8 +1,8 @@
-.header .search-container .notification {
+.header .searchContainer .notification {
     position: relative;
     cursor: pointer; }
 
-.header .search-container .notification .notification__point::after {
+.header .searchContainer .notification .notificationPoint::after {
     content: "";
     position: absolute;
     top: 0;

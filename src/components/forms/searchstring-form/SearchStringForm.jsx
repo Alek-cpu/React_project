@@ -1,23 +1,6 @@
 import React from 'react';
 
-class SearchStringForm extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {value: ''};
-
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
-
-    handleChange(event) {
-        this.setState({value: event.target.value});
-    }
-
-    handleSubmit(event) {
-        alert('Отправленное имя: ' + this.state.value);
-        event.preventDefault();
-    }
-
+export default class SearchStringForm extends React.Component {
     render() {
         return (
             <form className="searchString">
@@ -34,5 +17,3 @@ class SearchStringForm extends React.Component {
         );
     }
 }
-
-export default SearchStringForm;

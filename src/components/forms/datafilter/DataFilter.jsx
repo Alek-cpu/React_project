@@ -1,6 +1,6 @@
 import React from 'react';
 
-function DataFilter() {
+export default function DataFilter() {
     return (
         <div className="dataFilter">
             <div className="contactSort">
@@ -18,5 +18,3 @@ function DataFilter() {
         </div>
     );
 }
-
-export default DataFilter;

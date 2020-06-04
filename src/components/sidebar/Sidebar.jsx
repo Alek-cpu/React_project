@@ -5,11 +5,10 @@ import SettingItem from "./setting-item/SettingItem";
 import ToggleSidebar from "./toggle-sidebar/ToggleSidebar";
 import userPhoto from '../../img/image 2.png';
 
-function Sidebar(props) {
+export default function Sidebar(props) {
     return (
         <aside className="sidebar">
             <div className="sidebar-container">
-                {/*промапить*/}
                 <UserNav />
                 <SettingItem />
                 <ToggleSidebar click={props.click} />
@@ -17,5 +16,3 @@ function Sidebar(props) {
         </aside>
     );
 }
-
-export default Sidebar;

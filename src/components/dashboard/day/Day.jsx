@@ -1,10 +1,12 @@
 import React from 'react';
 
-const Day = (props) => {
+const Day = (
+    {nameDay, numberDay}
+) => {
     return (
         <div className="day">
-            <div className="nameDay">{props.nameDay}</div>
-            <div className="numberDay ">{props.numberDay}</div>
+            <div className="nameDay">{nameDay}</div>
+            <div className="numberDay ">{numberDay}</div>
         </div>
     );
 }

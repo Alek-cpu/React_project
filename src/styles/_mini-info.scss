@@ -4,14 +4,14 @@
 
 .profile .profileInfo {
     display: flex; }
-.profile .profileInfo .profile-photo {
+.profile .profileInfo .profilePhoto {
     width: 47px;
     height: 47px; }
 .profile .profileInfo .profilePhotoMini {
     border-radius: 50%; }
-.profile .profileInfo .profile-block {
+.profile .profileInfo .profileBlock {
     padding-left: 9px; }
-.profile .profileInfo .profile-block .profileEmail {
+.profile .profileInfo .profileBlock .profileEmail {
     font-size: 11px;
     line-height: 16px;
     color: #90A0B7; }
@@ -26,9 +26,9 @@
     color: #323C47; }
 
 @media screen and (max-width: 1085px) {
-    .profile-block {
+    .profileBlock {
         display: none; }
-    .profile-photo {
+    .profilePhoto {
         text-align: center;
     }
 }
@@ -38,9 +38,9 @@
         display: none; }
     .profile .profileInfo {
         display: none; }
-    .profile .profileInfo .profile-block {
+    .profile .profileInfo .profileBlock {
         padding-left: 9px; }
-    .profile .profileInfo .profile-block .profileEmail {
+    .profile .profileInfo .profileBlock .profileEmail {
         font-size: 11px; }
     .profileName {
         display: none;

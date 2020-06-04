@@ -1,26 +1,28 @@
 import React from 'react';
 import userAvatar from '../../../img/image4 4.png';
 
-const Card = (props) => {
+const Card = (
+    {id, eventName, dueDate, userName, identicalStatus, statusName}
+) => {
     return (
-        <div className="card" id={props.id}>
+        <div className="card" id={id}>
             <div className="eventWrap">
                 <div className="infoEventInner">
-                    <div className="eventsName">{props.eventName}</div>
+                    <div className="eventsName">{eventName}</div>
                     <div className="eventsDate">
                         <div className="due">Due date:</div>
-                        <div className="dueDate">{props.dueDate}</div>
+                        <div className="dueDate">{dueDate}</div>
                     </div>
                     <div className="personBlock">
                         <div className="personPhoto">
                             <img className="miniPhoto" src={userAvatar} alt={userAvatar}/>
                         </div>
-                        <div className="personName">{props.userName}</div>
+                        <div className="personName">{userName}</div>
                     </div>
                 </div>
                 <div className="identicalInner">
                     <div className="identicalStatusInner">
-                        <div className="identicalStatus">{props.identicalStatus}</div>
+                        <div className="identicalStatus">{identicalStatus}</div>
                     </div>
                     <div className="statusEvent">
                         <div className="editControl">
@@ -53,7 +55,7 @@ const Card = (props) => {
                                 </svg>
                             </div>
                         </div>
-                        <span className="statusName control complited">{props.statusName}</span>
+                        <span className="statusName control complited">{statusName}</span>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import {func} from "prop-types";
 
-function ContactSort() {
+export default function ContactSort() {
     return (
         <div className="contactSort">
             Company:
@@ -17,5 +17,3 @@ function ContactSort() {
         </div>
     );
 }
-
-export default ContactSort;

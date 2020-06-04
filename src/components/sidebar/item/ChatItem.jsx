@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ChatItem() {
+export default function ChatItem() {
     return (
         <a href="#">
             <div className="mnuItem">
@@ -15,5 +15,3 @@ function ChatItem() {
         </a>
     );
 }
-
-export default ChatItem;

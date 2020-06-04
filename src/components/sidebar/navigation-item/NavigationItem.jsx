@@ -7,7 +7,7 @@ import ChatItem from "../item/ChatItem";
 import DealsItem from "../item/DealsItem";
 import {NavLink} from 'react-router-dom';
 
-function Navigation() {
+export default function Navigation() {
     return (
         <nav className="mnu">
             <NavLink to="/dashboard">
@@ -23,5 +23,3 @@ function Navigation() {
         </nav>
     );
 }
-
-export default Navigation;

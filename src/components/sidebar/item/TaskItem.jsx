@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TaskItem() {
+export default function TaskItem() {
     return (
         <a href="#">
             <div className="mnuItem">
@@ -15,5 +15,3 @@ function TaskItem() {
         </a>
     );
 }
-
-export default TaskItem;

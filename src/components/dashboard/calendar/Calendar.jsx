@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {render} from 'react-dom';
 import Calendar from 'react-calendar';
 
-function ReactCalendar() {
+export default function ReactCalendar() {
     const [date, setDate] = useState(new Date());
 
     const onChange = date => {
@@ -21,5 +21,3 @@ function ReactCalendar() {
         </div>
     );
 }
-
-export default ReactCalendar;

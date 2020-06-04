@@ -2,7 +2,7 @@ import React from 'react';
 import NotificationBtn from "../../forms/notification/Notification";
 import SearchStringForm from "../../forms/searchstring-form/SearchStringForm";
 
-function SearchString() {
+export default function SearchString() {
     return (
         <div className="searchContainer">
             <SearchStringForm />
@@ -10,5 +10,3 @@ function SearchString() {
         </div>
     );
 }
-
-export default SearchString;

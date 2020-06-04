@@ -1,7 +1,7 @@
 import React from 'react';
 import Day from "../day/Day";
 
-function CalendarWeek() {
+export default function CalendarWeek() {
     return (
         <div className="calendarWeek">
             <div className="calendarWrapper">
@@ -40,5 +40,3 @@ function CalendarWeek() {
         </div>
     );
 }
-
-export default CalendarWeek;

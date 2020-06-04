@@ -61,7 +61,7 @@ const getListStyle = isDraggingOver => ({
     width: `${100}%`
 });
 
-class Cards extends Component {
+export default class Cards extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -127,5 +127,3 @@ class Cards extends Component {
         );
     }
 }
-
-export default Cards;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function NotificationBtn() {
+export default function NotificationBtn() {
     return (
         <div className="notification">
             <div className="notificationPoint">
@@ -14,5 +14,3 @@ function NotificationBtn() {
         </div>
     );
 }
-
-export default NotificationBtn;
