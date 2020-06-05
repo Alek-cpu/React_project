@@ -1,10 +1,10 @@
 import {combineReducers} from 'redux';
-import ContactReducers from "./contact";
-import CardReducer from "./card";
+import infLine from './contact';
+import card from './card';
 
 const allReducers = combineReducers ({
-   infLine: ContactReducers,
-   card: CardReducer,
+   infLine: infLine,
+   card: card,
 });
 
 export default allReducers;

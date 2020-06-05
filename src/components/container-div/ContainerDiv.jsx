@@ -2,8 +2,10 @@ import React from 'react';
 import Dashboard from '../../screens/dashboard/Dashboard';
 import Contact from '../../screens/contact/Contact';
 import Route from 'react-router-dom/es/Route';
-import {dashboard, contact} from '../../constants/constants';
-import index from "../../store";
+import constants from '../../constants/constants';
+import index from '../../store';
+
+const {dashboard, contact} = constants
 
 const routes = [
     {

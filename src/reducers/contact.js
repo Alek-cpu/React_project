@@ -1,4 +1,3 @@
-import {ADD_NEW_CONTACT} from "../constants/constants";
 import userAvatar from "../img/image 2 (1).png";
 
 const contacts = [
@@ -97,7 +96,7 @@ const contacts = [
 
 export default function (state = contacts, action) {
     switch (action.type) {
-        case ADD_NEW_CONTACT:
+        case 'ADD_NEW_CONTACT':
             return state.concat({
                 id: Date.now(),
                 userName: 'Vasya Vasserman',
