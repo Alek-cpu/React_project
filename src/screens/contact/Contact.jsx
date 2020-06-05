@@ -4,7 +4,7 @@ import CbxHeaderInfoLine from '../../components/forms/cbxheader-infoline/CbxHead
 import ContactSort from '../../components/forms/contact-sort/ContactSort';
 import ContactAdd from "../../components/forms/contact-add/ContactAdd";
 import {bindActionCreators} from 'redux';
-import {addContact} from '../../action';
+import {addContact} from '../../actions';
 import {connect} from 'react-redux';
 import userAvatar from '../../img/image 2 (1).png';
 
