@@ -1,15 +1,16 @@
 import React from 'react';
-import ProgresCheck from '../../components/dashboard/progres-check/ProgresCheck';
+
+import ProgressCheck from '../../components/dashboard/progress-check/ProgressCheck';
 import CalendarWeek from '../../components/dashboard/calendar-week/CalendarWeek';
 import Cards from '../../components/dashboard/cards/Cards';
 import ReactCalendar from '../../components/dashboard/calendar/Calendar';
-import ProgresCompl from '../../components/dashboard/stat/ProgresCompl';
+import ProgressCompl from '../../components/dashboard/progress-completed/ProgressCompleted';
 
-const Dashboard = (props) => {
+const Dashboard = () => {
     return (
         <div className="baseWrapper">
             <div className="ddWrap">
-                <ProgresCheck />
+                <ProgressCheck />
                 <CalendarWeek />
                 <div className="dragDrop">
                     <Cards />
@@ -18,9 +19,9 @@ const Dashboard = (props) => {
                     Show more
                 </div>
             </div>
-            <div className="progresWrap">
+            <div className="progressWrap">
                 <ReactCalendar />
-                <ProgresCompl />
+                <ProgressCompl />
             </div>
         </div>
     );

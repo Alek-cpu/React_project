@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+
 import ContactCommand from '../../components/contact/contact-command/ContactCommand';
 import CbxHeaderInfoLine from '../../components/forms/cbxheader-infoline/CbxHeaderInfoLine';
 import ContactSort from '../../components/forms/contact-sort/ContactSort';
-import ContactAdd from "../../components/forms/contact-add/ContactAdd";
-import {bindActionCreators} from 'redux';
+import BlueButton from "../../components/forms/blue-button/BlueButton";
 import {addContact} from '../../actions';
-import {connect} from 'react-redux';
-import userAvatar from '../../img/image 2 (1).png';
+import userAvatar from '../../img/person-man.png';
 
 class Contact extends Component {
 
@@ -19,12 +20,12 @@ class Contact extends Component {
                         <form className="row-space-cbx">
                             <input type="checkbox"
                                    className="formCbx chield" id={inf.id}/><label
-                            htmlFor={inf.id}></label>
+                            htmlFor={inf.id} />
                         </form>
                     </td>
                     <td className="profileName" id={inf.id}>
                         <div className="listHeaderPhoto">
-                            <img className="miniPhoto" src={userAvatar} alt=""/></div>
+                            <img className="miniPhoto" src={userAvatar} alt="personsAvatar"/></div>
                         <div className="listHeaderName">{inf.userName}</div>
                     </td>
                     <td>{inf.email}</td>
@@ -45,7 +46,7 @@ class Contact extends Component {
             <div className="contact">
                 <div className="contactCommand">
                     <ContactSort />
-                    <ContactAdd click={() => addContact()} />
+                    <BlueButton click={() => addContact()} />
                 </div>
                 <div className="contactInner">
                     <div className="wrapperTable">

@@ -1,11 +1,11 @@
 import React from 'react';
 
 
-const CbxHeaderInfoLine = (props) => {
+const CbxHeaderInfoLine = () => {
     return (
         <form className="rowSpaceCbx">
             <input type="checkbox" className="formCbx countTask" id="checkbox" /><label
-            htmlFor="checkbox"></label>
+            htmlFor="checkbox" />
         </form>
     );
 }

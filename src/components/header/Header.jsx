@@ -1,5 +1,6 @@
 import React from 'react';
-import NotificationBtn from '../forms/notification/Notification';
+
+import NotificationBtn from '../forms/notification-btn/NotificationBtn';
 import SearchStringForm from '../forms/searchstring-form/SearchStringForm';
 
 export default function Header() {

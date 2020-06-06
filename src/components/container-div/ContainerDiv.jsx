@@ -1,7 +1,8 @@
 import React from 'react';
+import Route from 'react-router-dom/es/Route';
+
 import Dashboard from '../../screens/dashboard/Dashboard';
 import Contact from '../../screens/contact/Contact';
-import Route from 'react-router-dom/es/Route';
 import constants from '../../constants/constants';
 import index from '../../store';
 
@@ -18,7 +19,7 @@ const routes = [
     }
 ]
 
-const ContainerDiv = (props) => {
+const ContainerDiv = () => {
 
     return (
         <div className="container">

@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import Card from '../card/Card';
-import userCardList from '../../../containers/userCardList';
 import {DragDropContext, Droppable, Draggable} from 'react-beautiful-dnd';
-import CardList from '../../../containers/userCardList';
+
+import Card from '../card/Card';
+import userCardList from '../../../containers/CardList';
+import CardList from '../../../containers/CardList';
 
 const arrayCard = [
     {
@@ -86,7 +87,10 @@ export default class Cards extends Component {
         });
     }
 
+
+
     render() {
+        const {items} = this.state;
         return (
             <DragDropContext onDragEnd={this.onDragEnd}>
                 <Droppable droppableId="droppable">
@@ -96,7 +100,7 @@ export default class Cards extends Component {
                              ref={provided.innerRef}
                              style={getListStyle(snapshot.isDraggingOver)}
                         >
-                            {this.state.items.map((item, index) => (
+                            {items.map((item, index) => (
                                 <Draggable key={item.id} draggableId={item.id} index={index}>
                                     {(provided, snapshot) => (
                                         <div className="dragDropWrapper"

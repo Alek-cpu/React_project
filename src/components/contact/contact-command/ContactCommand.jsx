@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import ContactSort from '../../forms/contact-sort/ContactSort';
-import ContactAdd from '../../forms/contact-add/ContactAdd';
 import {render} from 'react-dom';
+
+import ContactSort from '../../forms/contact-sort/ContactSort';
+import BlueButton from '../../forms/blue-button/BlueButton';
 
 export default class ContactCommand extends Component {
     constructor(props) {
@@ -13,7 +14,7 @@ export default class ContactCommand extends Component {
         return (
             <div className="contactCommand">
                 <ContactSort/>
-                <ContactAdd onClick={onClick}/>
+                <BlueButton onClick={onClick}/>
             </div>
         );
     }

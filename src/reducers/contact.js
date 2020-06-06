@@ -1,4 +1,4 @@
-import userAvatar from "../img/image 2 (1).png";
+import userAvatar from "../img/person-man.png";
 
 const contacts = [
     {
