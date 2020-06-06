@@ -58,10 +58,6 @@ const getItemStyle = (isDragging, draggableStyle) => ({
     ...draggableStyle
 });
 
-const getListStyle = isDraggingOver => ({
-    width: `${100}%`
-});
-
 export default class Cards extends Component {
     constructor(props) {
         super(props);
@@ -90,7 +86,7 @@ export default class Cards extends Component {
 
 
     render() {
-        const {items} = this.state;
+        let {items} = this.state
         return (
             <DragDropContext onDragEnd={this.onDragEnd}>
                 <Droppable droppableId="droppable">
@@ -98,7 +94,6 @@ export default class Cards extends Component {
                         <div className="dragDropWrapper"
                              {...provided.droppableProps}
                              ref={provided.innerRef}
-                             style={getListStyle(snapshot.isDraggingOver)}
                         >
                             {items.map((item, index) => (
                                 <Draggable key={item.id} draggableId={item.id} index={index}>

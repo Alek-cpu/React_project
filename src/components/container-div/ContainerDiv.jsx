@@ -3,21 +3,10 @@ import Route from 'react-router-dom/es/Route';
 
 import Dashboard from '../../screens/dashboard/Dashboard';
 import Contact from '../../screens/contact/Contact';
-import constants from '../../constants/constants';
+import routes from '../../constants/routes';
 import index from '../../store';
 
-const {dashboard, contact} = constants
 
-const routes = [
-    {
-        path: dashboard,
-        component: <Dashboard />
-    },
-    {
-        path: contact,
-        component: <Contact />
-    }
-]
 
 const ContainerDiv = () => {
 

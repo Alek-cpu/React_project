@@ -2,16 +2,23 @@ import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import ContactCommand from '../../components/contact/contact-command/ContactCommand';
 import CbxHeaderInfoLine from '../../components/forms/cbxheader-infoline/CbxHeaderInfoLine';
-import ContactSort from '../../components/forms/contact-sort/ContactSort';
+import SelectSort from '../../components/forms/select-sort/SelectSort';
 import BlueButton from "../../components/forms/blue-button/BlueButton";
 import {addContact} from '../../actions';
 import userAvatar from '../../img/person-man.png';
 
 class Contact extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            options: ["All", "Name", "Surname", "Company"]
+        }
+    }
 
-    showItem() {
+
+        showItem() {
+
         let {infLine} = this.props;
         return infLine.map((inf) => {
             return (
@@ -20,7 +27,7 @@ class Contact extends Component {
                         <form className="row-space-cbx">
                             <input type="checkbox"
                                    className="formCbx chield" id={inf.id}/><label
-                            htmlFor={inf.id} />
+                            htmlFor={inf.id}/>
                         </form>
                     </td>
                     <td className="profileName" id={inf.id}>
@@ -45,15 +52,20 @@ class Contact extends Component {
         return (
             <div className="contact">
                 <div className="contactCommand">
-                    <ContactSort />
-                    <BlueButton click={() => addContact()} />
+                    <div className="contactSort">
+                        Company:
+                        <select className="contactSortList" size="1">
+                            {this.state.options.map((option, idx) =>  <option key={idx} >{option} </option>)}
+                        </select>
+                    </div>
+                    <BlueButton click={() => addContact()}/>
                 </div>
                 <div className="contactInner">
                     <div className="wrapperTable">
                         <table className="contactList">
                             <tr className="headerLine">
                                 <th className="rowSpace">
-                                    <CbxHeaderInfoLine />
+                                    <CbxHeaderInfoLine/>
                                 </th>
                                 <th className="row1 headerText hideElement">
                                     <div className="listHeaderName">Name</div>
