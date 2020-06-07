@@ -39,7 +39,7 @@ export default function CalendarWeek() {
 
     return (
         <div className="calendarWeek">
-            <div className="date">{moment().add(1, 'day').format('D MMMM, dddd')}</div>
+            <div className="date">{moment().format('D MMMM, dddd')}</div>
             <div className="daysWeek">
                 <Day
                     items={items}
