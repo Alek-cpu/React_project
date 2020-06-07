@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 
 import Day from '../day/Day';
 
@@ -35,9 +36,10 @@ export default function CalendarWeek() {
         },
     ]
 
+
     return (
         <div className="calendarWeek">
-            <div className="date">23 December, Sunday</div>
+            <div className="date">{moment().format('D MMMM, dddd')}</div>
             <div className="daysWeek">
                 <Day
                     items={items}

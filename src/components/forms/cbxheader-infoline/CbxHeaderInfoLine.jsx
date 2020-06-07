@@ -14,7 +14,6 @@ export default class CbxHeaderInfoLine extends Component {
         });
     }
 
-
     render() {
         let {isChecked} = this.state
         return (
