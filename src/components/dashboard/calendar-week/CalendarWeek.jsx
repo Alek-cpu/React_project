@@ -7,39 +7,39 @@ export default function CalendarWeek() {
 
     const items = [
         {
-            nameDay: "Sun",
-            numberDay: "23"
+            nameDay: moment().format('ddd'),
+            numberDay: moment().format('D')
         },
         {
-            nameDay: "Mon",
-            numberDay: "24"
+            nameDay: moment().add(1, 'day').format('ddd'),
+            numberDay: moment().add(1, 'day').format('D')
         },
         {
-            nameDay: "Tue",
-            numberDay: "25"
+            nameDay: moment().add(2, 'day').format('ddd'),
+            numberDay: moment().add(2, 'day').format('D')
         },
         {
-            nameDay: "Wed",
-            numberDay: "26"
+            nameDay: moment().add(3, 'day').format('ddd'),
+            numberDay: moment().add(3, 'day').format('D')
         },
         {
-            nameDay: "Thu",
-            numberDay: "27"
+            nameDay: moment().add(4, 'day').format('ddd'),
+            numberDay: moment().add(4, 'day').format('D')
         },
         {
-            nameDay: "Fri",
-            numberDay: "28"
+            nameDay: moment().add(5, 'day').format('ddd'),
+            numberDay: moment().add(5, 'day').format('D')
         },
         {
-            nameDay: "Sat",
-            numberDay: "29"
+            nameDay: moment().add(6, 'day').format('ddd'),
+            numberDay: moment().add(6, 'day').format('D')
         },
     ]
 
 
     return (
         <div className="calendarWeek">
-            <div className="date">{moment().format('D MMMM, dddd')}</div>
+            <div className="date">{moment().add(1, 'day').format('D MMMM, dddd')}</div>
             <div className="daysWeek">
                 <Day
                     items={items}
