@@ -10,17 +10,25 @@ import {addContact} from '../../actions';
 import userAvatar from '../../img/person-man.png';
 
 class Contact extends Component {
+
     showItem() {
         let {infLine} = this.props;
         return infLine.map((inf) => {
             return (
                 <tr className="infoLine">
                     <td>
-                        <CheckboxInfoLine id={inf.id}/>
+                        <CheckboxInfoLine
+                            id={inf.id}
+                        />
                     </td>
                     <td className="profileName" id={inf.id}>
                         <div className="listHeaderPhoto">
-                            <img className="miniPhoto" src={userAvatar} alt="personsAvatar"/></div>
+                            <img
+                                className="miniPhoto"
+                                src={userAvatar}
+                                alt="personsAvatar"
+                            />
+                        </div>
                         <div className="listHeaderName">{inf.userName}</div>
                     </td>
                     <td>{inf.email}</td>
