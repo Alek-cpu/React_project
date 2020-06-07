@@ -8,7 +8,6 @@ export default function ReactCalendar() {
     const onChange = date => {
         setDate(date);
     };
-
     return (
         <div>
             <Calendar

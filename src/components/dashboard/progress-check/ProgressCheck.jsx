@@ -1,15 +1,25 @@
 import React, {Component} from 'react';
 
-import SelectSort from "../../forms/select-sort/SelectSort";
+import SelectBox from "../../forms/select-box/SelectBox";
+
+const items = [
+    {
+        name: 'Week'
+    },
+    {
+        name: 'Month'
+    },
+    {
+        name: 'Day'
+    },
+]
 
 export default class ProgressCheck extends Component{
     constructor(props) {
         super(props);
-        this.state = {
-            options: ["Month", "Week", "Day"]
-        }
     }
     render() {
+
         return (
             <div className="progressCheck">
                 <div className="task">
@@ -17,9 +27,7 @@ export default class ProgressCheck extends Component{
                     <div className="dataFilter">
                         <div className="contactSort">
                             Show:
-                            <select className="contactSortList" size="1">
-                                {this.state.options.map((option, idx) =>  <option key={idx} >{option} </option>)}
-                            </select>
+                            <SelectBox items={items} />
                         </div>
                     </div>
                 </div>

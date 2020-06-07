@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const CbxHeaderInfoLine = () => {
     return (
         <form className="rowSpaceCbx">

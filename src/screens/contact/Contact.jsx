@@ -3,32 +3,20 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
 import CbxHeaderInfoLine from '../../components/forms/cbxheader-infoline/CbxHeaderInfoLine';
-import SelectSort from '../../components/forms/select-sort/SelectSort';
+import SelectBox from '../../components/forms/select-box/SelectBox';
 import BlueButton from "../../components/forms/blue-button/BlueButton";
+import CheckboxInfoLine from "../../components/forms/checkbox-infoline/CheckboxInfoLine";
 import {addContact} from '../../actions';
 import userAvatar from '../../img/person-man.png';
 
 class Contact extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            options: ["All", "Name", "Surname", "Company"]
-        }
-    }
-
-
-        showItem() {
-
+    showItem() {
         let {infLine} = this.props;
         return infLine.map((inf) => {
             return (
                 <tr className="infoLine">
                     <td>
-                        <form className="row-space-cbx">
-                            <input type="checkbox"
-                                   className="formCbx chield" id={inf.id}/><label
-                            htmlFor={inf.id}/>
-                        </form>
+                        <CheckboxInfoLine id={inf.id}/>
                     </td>
                     <td className="profileName" id={inf.id}>
                         <div className="listHeaderPhoto">
@@ -47,6 +35,30 @@ class Contact extends Component {
 
     render() {
 
+        const items = [
+            {
+                name: 'All'
+            },
+            {
+                name: 'Name'
+            },
+            {
+                name: 'Email'
+            },
+            {
+                name: 'Company Name'
+            },
+            {
+                name: 'Role'
+            },
+            {
+                name: 'Forecast'
+            },
+            {
+                name: 'Recent activity'
+            },
+        ]
+
         let {addContact} = this.props;
 
         return (
@@ -54,9 +66,7 @@ class Contact extends Component {
                 <div className="contactCommand">
                     <div className="contactSort">
                         Company:
-                        <select className="contactSortList" size="1">
-                            {this.state.options.map((option, idx) =>  <option key={idx} >{option} </option>)}
-                        </select>
+                        <SelectBox items={items} />
                     </div>
                     <BlueButton click={() => addContact()}/>
                 </div>
@@ -65,7 +75,7 @@ class Contact extends Component {
                         <table className="contactList">
                             <tr className="headerLine">
                                 <th className="rowSpace">
-                                    <CbxHeaderInfoLine/>
+                                    <CbxHeaderInfoLine />
                                 </th>
                                 <th className="row1 headerText hideElement">
                                     <div className="listHeaderName">Name</div>
@@ -74,7 +84,7 @@ class Contact extends Component {
                                     <div className="listHeaderEmail">Email</div>
                                 </th>
                                 <th className="row1 headerText hideElement">
-                                    <div className="listHeaderCompname">Company name</div>
+                                    <div className="listHeaderCompName">Company name</div>
                                 </th>
                                 <th className="row1 headerText hideElement">
                                     <div className="listHeaderRole">Role</div>

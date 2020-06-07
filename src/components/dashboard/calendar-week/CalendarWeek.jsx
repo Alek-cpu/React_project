@@ -3,40 +3,45 @@ import React from 'react';
 import Day from '../day/Day';
 
 export default function CalendarWeek() {
+
+    const items = [
+        {
+            nameDay: "Sun",
+            numberDay: "23"
+        },
+        {
+            nameDay: "Mon",
+            numberDay: "24"
+        },
+        {
+            nameDay: "Tue",
+            numberDay: "25"
+        },
+        {
+            nameDay: "Wed",
+            numberDay: "26"
+        },
+        {
+            nameDay: "Thu",
+            numberDay: "27"
+        },
+        {
+            nameDay: "Fri",
+            numberDay: "28"
+        },
+        {
+            nameDay: "Sat",
+            numberDay: "29"
+        },
+    ]
+
     return (
         <div className="calendarWeek">
-            <div className="calendarWrapper">
-                <div className="date">23 December, Sunday</div>
-                <div className="daysWeek">
-                    <Day
-                        nameDay={"Sun"}
-                        numberDay={"23"}
-                    />
-                    <Day
-                        nameDay={"Mon"}
-                        numberDay={"24"}
-                    />
-                    <Day
-                        nameDay={"Tue"}
-                        numberDay={"25"}
-                    />
-                    <Day
-                        nameDay={"Wed"}
-                        numberDay={"26"}
-                    />
-                    <Day
-                        nameDay={"Thu"}
-                        numberDay={"27"}
-                    />
-                    <Day
-                        nameDay={"Fri"}
-                        numberDay={"28"}
-                    />
-                    <Day
-                        nameDay={"Sat"}
-                        numberDay={"29"}
-                    />
-                </div>
+            <div className="date">23 December, Sunday</div>
+            <div className="daysWeek">
+                <Day
+                    items={items}
+                />
             </div>
         </div>
     );

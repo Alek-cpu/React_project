@@ -1,13 +1,17 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 
 const Day = (
-    {nameDay, numberDay}
+    {items}
 ) => {
     return (
-        <div className="day">
-            <div className="nameDay">{nameDay}</div>
-            <div className="numberDay ">{numberDay}</div>
-        </div>
+        <Fragment>
+            {!!items && items.map((value, index) => (
+                <div className="day">
+                    <div className="nameDay" key={index}>{value.nameDay}</div>
+                    <div className="numberDay" key={index}>{value.numberDay}</div>
+                </div>
+            ))}
+        </Fragment>
     );
 }
 

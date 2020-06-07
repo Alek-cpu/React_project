@@ -1,18 +1,26 @@
 import React, {Component} from 'react';
 
-import SelectSort from "../../forms/select-sort/SelectSort";
+import SelectBox from "../../forms/select-box/SelectBox";
 import yellowMinCircle from '../../../img/mini-yellow-circle.svg';
 import greenMinCircle from '../../../img/green-mini-circle.svg';
 import redMinCircle from '../../../img/red-mini-eclipse.svg';
 
 export default class  ProgressCompleted extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            options: ["Month", "Week", "Day"]
-        }
-    }
+
     render() {
+
+        const items = [
+            {
+                name: 'Month'
+            },
+            {
+                name: 'Week'
+            },
+            {
+                name: 'Day'
+            },
+        ]
+
         return (
             <div className="stat">
                 <div className="statWrap">
@@ -21,9 +29,7 @@ export default class  ProgressCompleted extends Component {
                         <div className="dataFilter">
                             <div className="contactSort">
                                 Show:
-                                <select className="contactSortList" size="1">
-                                    {this.state.options.map((option, idx) =>  <option key={idx} >{option} </option>)}
-                                </select>
+                                <SelectBox items={items} />
                             </div>
                         </div>
                     </div>
